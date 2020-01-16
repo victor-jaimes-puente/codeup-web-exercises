@@ -1,0 +1,41 @@
+.fancy-header {
+    color: white;
+    text-decoration: underline;
+}
+h1, h2 {
+    color: white;
+    -moz-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+ body {
+    background-color: dimgray;
+    background-image: url("../images/HornedOwl.jpg");
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    background-attachment: fixed;
+}
+body, header, footer {
+    color: white;
+    margin: 1px;
+    font-family: "American Typewriter";
+
+}
+ul{
+    list-style: circle;
+}
+
+tr, td{
+    padding-bottom: 15%;
+    padding-top: 15%;
+    font-family: Baskerville;
+    font-style: oblique;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: yellow;
+}
