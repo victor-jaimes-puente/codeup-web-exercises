@@ -4,4 +4,32 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
+
+}
+
+.message {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .5em;
+    margin: .25em;
+}
+
+.message-info {
+    background:#C3D5FF;
+    color: #005854AD0;
+}
+
+.message-success {
+    background: #C2ECCC;
+    color: #2E7744;
+}
+
+.message-warning {
+    background: #F7F8B8;
+    color: #9A8E2F;
+}
+
+.message-error {
+    background: #E3B8BD;
+    color: #7A1B35;
 }
