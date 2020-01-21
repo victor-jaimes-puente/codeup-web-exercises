@@ -59,35 +59,41 @@ a {
     line-height: 80px;
 }
 .profile-image{
-    z-index: 1000;
     position:absolute;
-    top:205px;
+    top:225px;
 }
 .profile-details{
     float:left;
-    margin:.5em 0em;
-    width: calc(25% - .5em);
+    margin:0em .5em;
+    width: calc(25% - 1em);
 
 }
 .timeline{
     float: left;
-    width: calc(50% - .5em);
-    margin:.5em 0em;
+    margin:0em .5em;
+    width: calc(50% - 1em);
 }
 
 .who-to-follow{
-    float:right;
-    margin: .5em 0em;
-    width: calc(25% - .5em);
-
+    float:left;
+    margin: 0em .5em;
+    width: calc(25% - 1em);
 }
 .container{
     padding: 2em;
 }
+.profile-items{
+    padding:0;
+    list-style-type:none;
+
+}
+.profile-entry {
+    margin: .5em 0;
+}
 .media{
     width: 100%;
     background: white;
-    border-bottom: 1px solid #e6ecf0;
+    border-bottom: 1px var(--separator-color) solid;
     padding:.5em;
     overflow:auto;
 }
@@ -95,6 +101,10 @@ a {
     float:left;
     max-width:50px;
     margin-top:1.33em;
+
+}
+.media-body{
+    width: 100%;
     width: calc(100% - 1.33em);
 }
 .btn {
