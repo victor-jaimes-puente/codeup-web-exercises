@@ -85,7 +85,9 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h3 {
-    justify-items: right;
+    display:flex;
+    justify-content:flex-start;
+    margin-right:100px
     /* enter needed declarations here */
 
 }
@@ -95,22 +97,22 @@ section:nth-of-type(3) h3 {
     width: 2em;
     height: 2em;
     border-radius: 1em;
-    margin: .5em;
+    margin: .25em;
 }
 
 .large-brown-box {
     height: 5em;
-    width: 5em;
+    width: 7em;
     background: brown;
     /* enter needed declarations here */
 }
 
-.large-brown-box:nth-of-type(2) {
-    margin: 0 1em;
+section:nth-of-type(4){
+    justify-content:space-between
+
 }
-
 section:nth-of-type(5) {
-
+    justify-content:space-evenly;
     /* enter needed declarations here */
 }
 
@@ -121,8 +123,11 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
+    display:flex;
     background: coral;
     height: 14em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     /* enter needed declarations here */
 }
 
