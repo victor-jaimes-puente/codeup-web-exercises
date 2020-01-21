@@ -1,10 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register With Us</title>
 </head>
 <body>
+<main>
+    <h1>Register With Us</h1>
+<!--formInitial-->
+    <form action="https://www.elformo.com/forms/96962000-6e8d-4721-81f6-82c761707f56
 
+" method="post" accept-charset="UTF-8">
+<!--emailPassword-->
+        <label for="email">Username</label>
+        <input id="email" name="email" placeholder="Enter your email">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <br>
+<!--bio        -->
+        <label for="bio">Please provide a short bio :)</label>
+        <br>
+        <textarea id="bio" name="bio" rows="10" cols="60" placeholder="Please provide a short bio :)" ></textarea>
+        <br>
+<!--radioAboutUs?-->
+        <h1>How did you hear about us?</h1>
+        <label for="radio">Radio</label>
+            <input type="radio" id="radio" name="radioAboutUs" value="radio">
+        <label for="billBoard">Billboard</label>
+            <input type="radio" id="billBoard" name="radioAboutUs" value="billBoard">
+        <label for="internet">Internet</label>
+            <input type="radio" id="internet" name="radioAboutUs" value="internet">
+        <label for="other">Other</label>
+            <input type="radio" id="other" name="radioAboutUs" value="other">
+        <br>
+<!--browserDropDown-->
+        <h1>What Browser Are You Using?</h1>
+        <select name="whatBrowserAreYouUsing?" id="browserSelect">
+            <option id="blank" value="blank"></option>
+            <option id="chrome" value="chrome">Chrome</option>
+            <option id="fireFox" value="fireFox">Fire Fox</option>
+            <option id="edge" value="edge">Edge</option>
+            <option id="otherSelect" value="other">Other</option>
+        </select>
+<!--submit-->
+        <input type="submit" value="Submit">
+    </form>
+</main>
 </body>
 </html>
