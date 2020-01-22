@@ -66,6 +66,10 @@ a {
 }
 
 .container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    align-self: center;
     /* This is a flex container */
 }
 
