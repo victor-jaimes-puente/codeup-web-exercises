@@ -1,0 +1,19 @@
+.parent {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 11;
+
+}
+.div2 {
+    grid-area: 10 / 1 / 11 / 11;
+
+}
+.div3 { grid-area: 2 / 1 / 10 / 11;
+
+}
