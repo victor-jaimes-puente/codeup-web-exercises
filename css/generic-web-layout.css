@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 body{
     margin:0;
@@ -8,6 +9,7 @@ body{
 .wrapper{
     display:grid;
     grid-template-columns: 20% 1fr 20%;
+    height:100vh;
     grid-template-areas:
             "header header header"
             "menu content ads"
@@ -40,4 +42,73 @@ header{
 }
 .menuItem:nth-of-type(n+2){
     margin-top:20px;
+}
+#ads{
+    display: grid;
+    grid-template-columns: 1fr;
+    border:5px solid black;
+    grid-template-areas:
+            "ad1"
+            "ad1"
+            "ad1"
+            "ad2"
+            "ad2"
+            "ad2"
+            "ad2"
+            "ad2"
+            "ad3"
+            "ad3"
+            "ad3"
+            "ad4"
+            "ad4"
+            "ad4"
+            "ad4"
+            "ad4"
+            "ad5"
+            "ad5"
+            "ad5"
+            "ad6"
+            "ad6"
+            "ad6"
+            "ad6"
+            "ad6"
+}
+.ads:nth-of-type(1){
+    grid-area:ad1;
+}
+.ads:nth-of-type(2){
+    grid-area:ad2;
+}
+.ads:nth-of-type(3){
+    grid-area:ad3;
+}
+.ads:nth-of-type(4){
+    grid-area:ad4;
+}
+.ads:nth-of-type(5){
+    grid-area:ad5;
+}
+.ads:nth-of-type(5){
+    grid-area:ad5;
+}
+.ads:nth-of-type(6){
+    grid-area:ad6;
+}
+
+
+#index{
+    grid-area: index;
+    display:flex;
+    margin:auto;
+}
+.indexItem:nth-of-type(n){
+    margin:10px;
+}
+#footer{
+    grid-area: footer;
+}
+#rights{
+    grid-area: rights;
+    display: flex;
+
 }
