@@ -1,44 +1,84 @@
-
-.circleButton {
-    height:105px;
-    width: 105px;
-    border-radius:50%;
-    border:lightblue 7px solid;
+*{
+    box-sizing: border-box;
 }
+.row{
+    background-color:gray;
+}
+.circleButton {
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    border: lightblue 7px solid;
+}
+
 .circleIcon {
-    padding:0;
-    margin:0;
-    height:18px;
+    padding: 0;
+    margin: 0;
+    height: 18px;
     width: 18px;
-    border-radius:50%;
+    border-radius: 50%;
     text-align: center;
     text-justify: auto;
     font-size: 8px;
     border: transparent 0;
-
-
 }
+.cardTitle {
+    font-size: 10px;
+}
+.cardImage{
+    border: lightgray 10px solid;
+    border-radius: 3%;
+}
+.cardImgCont {
+    margin:auto;
+    max-width: 100%;
+}
+
+
 #icon1 {
     background-color: red;
 }
+
 #icon2 {
     background-color: orange;
 }
+
 #icon3 {
     background-color: darkseagreen;
 }
+
 #icon4 {
     background-color: teal;
 }
+
 #largeButton1 {
     background-color: red;
 }
+
 #largeButton2 {
     background-color: orange;
 }
+
 #largeButton3 {
     background-color: darkseagreen;
 }
+
 #largeButton4 {
     background-color: teal;
+}
+@media screen and (max-width:375px) {
+    .cardImage {
+        margin-left: 10px;
+        border: lightgray 10px solid;
+        border-radius: 3%;
+    }
+    .smallScreenImage{
+        margin:10px;
+    }
+    .cardImgCont {
+        max-width: 90%;
+    }
+    .buttonContainer{
+
+    }
 }
