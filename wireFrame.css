@@ -14,13 +14,14 @@
 .circleIcon {
     padding: 0;
     margin: 0;
-    height: 18px;
-    width: 18px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
     text-align: center;
     text-justify: auto;
-    font-size: 8px;
+    font-size: 18px;
     border: transparent 0;
+    font-weight: bold;
 }
 .cardTitle {
     font-size: 10px;
@@ -81,4 +82,7 @@
     .buttonContainer{
 
     }
+h5{
+    margin-top:10px;
+}
 }
