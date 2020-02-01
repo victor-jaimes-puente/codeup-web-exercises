@@ -1,0 +1,150 @@
+#background-container {
+    background-color: #e6e6e6;
+}
+
+
+#navBarLogoBackground {
+    margin-top:12em;
+    height:15em;
+}
+#img{
+    margin-top:-7em;
+}
+#title-row {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    margin: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 125px;
+    padding: 1px;
+
+}
+
+
+/*#navbar {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    background-color: #e6e6e6;*/
+/*    justify-content: center;*/
+#visual {
+
+    margin: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px
+    margin-top: 50px;
+    padding: 100px;
+    font-family: 'Anton', sans-serif;
+}
+#utah {
+
+    font-family: 'Anton', sans-serif;
+    margin: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 100px;
+}
+#selected {
+
+    margin: 20px;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Abel', sans-serif;
+}
+#featuredProjects {
+
+    font-family: 'Abel', sans-serif;
+}
+.nav-style {
+    display: flex;
+
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 5px;
+    padding: 25px;
+}
+.nav-item {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    padding: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.circleButton {
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    border: 10px #F0F0F0;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+}
+.circleIcon {
+    padding: 0;
+    margin: 0;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Abel', sans-serif;;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+}
+.cardTitle {
+    font-size: 10px;
+}
+.cardImage {
+    border: lightgray 10px solid;
+    border-radius: 3%;
+}
+.cardImgCont {
+    margin: auto;
+    max-width: 100%;
+}
+#icon1 {
+
+    border-radius: 50%;
+    borer-color: #FOFOFO;
+    padding: 0;
+    margin: 0;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    text-align: center;
+    text-justify: auto;
+    font-size: 18px;
+    border: transparent 0;
+    font-weight: bold;
+}
+#icon2 {
+    background-color: #DEA03D;
+}
+#icon3 {
+    background-color: #00ABA9;
+}
+#icon4 {
+    background-color: #00ABA9;
+}
+#largeButton1 {
+    background-color: #E6563B;
+}
+#largeButton2 {
+    background-color: #DEA03D;
+}
+#largeButton3 {
+    background-color: #00ABA9;
+}
+#largeButton4 {
+    background-color: #E6563B;
+}

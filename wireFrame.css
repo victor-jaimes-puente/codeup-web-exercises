@@ -35,7 +35,9 @@
     max-width: 100%;
 }
 
-
+#cardBg{
+    background-color:gray;
+}
 #icon1 {
     background-color: red;
 }
@@ -67,15 +69,22 @@
 #largeButton4 {
     background-color: teal;
 }
+#cardSectionTitle{
+    font-size:40px;
+}
+#cardSectionTitle{
+    background-color:gray;
+    margin:0;
+}
 @media screen and (max-width:375px) {
     .cardImage {
         margin-left: 10px;
         border: lightgray 10px solid;
         border-radius: 3%;
     }
-    .smallScreenImage{
-        margin:10px;
-    }
+    /*.smallScreenImage{*/
+    /*    margin:10px;*/
+    /*}*/
     .cardImgCont {
         max-width: 90%;
     }
