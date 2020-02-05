@@ -726,15 +726,52 @@ Var Time	= false
 
 -	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
 
-Functions
+***Functions***
 
-Paramater vs Argument
+Parameter vs Argument
 
-Paramater : Place holer or variable.
-Argument : the input that actually goes in to the function when called.
+    Parameter : Place holder or variable.
+    Argument : the input that actually goes in to the function when called.
 
-After * return * the rest of the code will not be read.
+    After * return * the rest of the code will not be read.
 
-When writing a function and don't use a * return * it will not be referenced.
-For example if you console log you will not be able to use that information if trying to use later.
+*note*
+    When writing a function and don't use a * return * it will not be referenced.
+    For example if you console log you will not be able to use that information if trying to use later.
+
+Global variables vs local local variables
+    LocalVariable: variable declared within a function will not be able be referenced by other function
+        local variables will trump global variables if named the same, but only within the function.
+    Global: Declared outside of the function, can be used by all functions.
+*note*
+    Best practice is to use local variables.
+    AVOID GLOBAL VARIABLES
+
+Immediately-Invoked Function
+    An Immediately-Invoked Function Expression (IIFE) is a tool that allows us to keep our variables isolated.
+        // define a function and immediately invoke (i.e. call) it
+       *
+        (function () {
+            var iffeVar = "I'm local to the IIFE.";
+        })(); *
+
+        alert(iffeVar); // undefined
+        *
+    Your JS should always be within an IIFE. This is like the * "usestrict"; * should always be used in order to be safe
+    and keep un necessary information in to the global scope.
+
+     -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+
+        Git Branches ***
+
+        Create a new branch : * git branch "nameOfBranch" *
+        See all branches: * git branch *
+        Swap branch : * git checkout "nameOfBranch" *
+
+        *
+        git checkout master
+        git pull origin master
+        git merge "nameOfBranch"
+        'ctrl + x'
+
 
