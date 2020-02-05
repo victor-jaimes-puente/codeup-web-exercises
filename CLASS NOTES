@@ -1,0 +1,740 @@
+Code up Jan 2020
+
+In class notes and questions
+
+Jan 13 2109
+
+Intro to CSS
+
+In order to link external CSS use following in  head element
+
+*<link rel="stylesheet" href="css/site.css">
+*
+
+
+----------
+Selectos for CSS
+
+Element : name of element
+
+ID : name of the ID, preceded by a #
+
+Class : name of class preceded by a .
+
+
+————
+Jan 13 2122 //Stopped: CSS Properties and Selectors : Multiple Selectors.
+
+-----------
+
+Jan 14 2020
+
+In class 0854
+
+Received Welcome to CU packet, two sheets of paper.
+
+" If we keep doing what were doing, were going to keep getting what were are getting"
+
+First lesson will be HTML elements
+
+"The secret to building great products is not creating awesome features, its to make your user awesome"
+
+Duck concept: talk it out with your duck, say it out loud so that you may get a answer without actually talking to some one.
+
+If that fails, google it. (Lol)
+
+---------
+
+Setting up Github Vivian is giving class.
+
+Research CSH***
+
+Got a link from vivian .1
+
+https://github.com/gocodeup/codeup-setup-script
+
+Went down to For students and was told to copy code in box . 2
+
+bash -c "$(curl -sS https://raw.githubusercontent.com/gocodeup/codeup-setup-script/master/install.sh)"
+
+Zack came in and had me run some code will look it up. I could not find the actual code, I thought I could look it up in the terminal but the screen was cleared when I ran a different code.
+	I will stick to just relying on them to help re-setup Beverlys laptop. I will read ahead a bit in this HTML elements since that's what were supposed to cover today.
+
+
+Vivian commented n Appendix on CU website.
+
+Visited edabit
+
+Visited code wars
+
+Visited code camp
+
+Set up inteliJ
+
+Moved home folder to favs
+
+Create test folder
+
+Moved idea folder to favorites
+
+----------
+GIT AND GIT HUB
+
+Git is a version control system
+
+70 percent of students use git and git hub
+Tracks all changes made to a file.
+
+Commit message: statement of what was changed. History for your GitHub
+
+"I changed this because of xyz"
+
+Working directory >Git add > staging area >Git commit > local repo > git push > remote depo
+
+Remote depo > git pull > local repo > git checkout > working directory
+
+LUNCH
+
+Now you can have unlimited repositories with micro soft
+
+* Version control
+Keeps tracks of all versions or edits
+
+Can serve as a time machine, if we want to go back to a previous version .
+
+Parallel universes: should not be working on master branch.
+    MasterBranch: live version.
+
+If your code is not on gitHub it does not exist (backUp)
+
+PUSH WORK EVERY DAY *
+
+Backed up work is greater than perfect work.
+
+Commit messages should explain what changed and why.
+
+FIRST TIME SET UP ****************************************
+
+Open test folder
+Open terminal
+Current directory: pwd
+
+.gitignore file creation:(
+
+Right clicked *test-folder
+
+
+New file
+New file name: .gitignore
+
+.idea/*
+*.iml
+.DS_STORE (case sensitive)
+
+These files will be skipped)
+
+In order to initialize: *git init
+
+Status: * git status
+
+Right click Folder > create html file.
+
+Add all file : * git add .
+
+Add commit message: * git commit -m"initial commit"
+
+Can't push yet because we have not set up a connection between local and GitHub.
+
+Git hub. > plus sign > new repository
+
+Name and describe .
+Create rep.
+
+Toggle to SSH link
+
+On browser follow directions for creating existing repository from command line.
+
+******
+
+1.Ensure you are in correct folder
+2.* git status
+3.git add (name of file)
+4.git add . Will add all files that have changes made to them.
+(3 and 4 are one or the other)
+5. * git commit -m "comment" : will prepare files to be submitted.
+6. *git push : will upload all prepared files.
+
+**************
+
+Created a new folder named :
+Code-web-exercies.
+
+New file: .gitignore
+
+.idea/*
+*.iml
+.DS_STORE
+
+***********
+
+console:
+* git init
+
+* git add .
+
+Go to GitHub create a new repository
+
+Copy to console both lines in order
+
+* git push
+
+*************
+
+Will be creating folder for pulling from codeup
+
+Cloning will allow you to copy everything including settings.
+
+
+Copied url from GitHub which will be used to create a path so that we may pull
+
+FILE
+NEW
+PROJECT FROM VERSION CONTROL
+Paste URL
+Double check directory
+CLONE
+Open in new window
+
+*************
+Code up web exercises - Mine(push)
+Fortune web exercises - CU (pull)
+
+----------------------------------
+
+Jan 15 2020
+
+Arrived at 0730
+
+Walked here today and I loved it.
+
+Today we will be covering :
+HTML ELEMENTS
+HTML FORMS
+------------------------------
+
+David teaching HTML
+
+
+Git add
+Git commit
+Git push
+
+
+
+Block level elements :
+If block the "box" will go all the way
+Across the page.
+
+Other will have specified dimensions.
+
+Option + shit = equals CTRL in windows
+
+
+*** Images ***
+
+Image tag is different because it has no closing tag.
+
+Src tag will be used to dictate relative pathway to image file.
+
+Alt will be used to describe image for disabled users.
+
+***List**
+
+* ol : numbered
+
+* ul : un numbered
+
+* li : list item : li * 8 will create 8 list items.
+
+* hr : creates a line across page, also page break. (Can change color with CSS)
+***Semantic Elements***
+
+* div : helps organize elements : can use * id = * to name.
+
+* header, nav, main, article, section, aside, footer,
+All work the same as div, but semantically they have independent uses in the sense that they are used for conveying more information for the disabled, and for simplicity when coding.
+* main : main content :
+* we can use div, but its better to work with semantic elements.
+
+***Text styles built in***
+
+* em : emphizes text
+
+* strong : bold
+
+*** SRC and Ankors
+
+* <a href = ""> : will always require href. In-between tags text that is to be displayed	will be input.
+	* target = "blank" : will open new tab.
+***Tables***
+
+* table :
+
+* tr : table row
+* th : table header : will create column : will bold text
+		* td: table data
+
+
+***HTML forms***
+ Open console : cmd option I
+
+Method: http method that should be used, will auto set to GET
+GET: will add request to URL, will request information.
+POST: Will change data on the server - data is not added to the url.
+ACTION: Defines what data gets sent - If no data is specified the data is sent back to the URL.
+
+Resources: w3 - MDN docs (mozilla)
+
+QueryStrings: ?key1=value1&key2=value2&key3=value3 - if you have multiple key value pairs separate with & - begins with question mark.
+
+Submitting: Buttons allow us to be more creative rather than an imputes type of
+
+***Creating a form*
+
+Create form
+
+Insert url in to action.
+
+Add method: GET or POST
+
+Create your input
+
+*<form action = "url" method="GET">
+	<label for="zipcode-input">Enter you Zipcode:</label>
+	<input type="text" id="zipcode" placeholder="enter zip code">
+	<button type="submit">Submit</button>
+Key: name is what you are asking for, value is what is entered
+
+***Radio buttons***
+
+Name must match on all radio buttons since they are all working together. For example in a multiple choice question.
+
+####
+When creating a label the *for= will identify what its labeling, so when you create an input you must match the *id= with the *for form the label.
+
+You can wrap a label around a checkbox.
+
+<label>
+Checkbox
+</label>
+
+***exercise***
+Use hook bin instead of Request inspector.
+---------------------------------------------
+
+
+CSS FLOAT : Mainly used for wrapping text around objects.
+
+Positioning:
+
+Top bottom right and left
+
+Position relative: block is still respected only the visual representation is the only thing changes.
+
+Absolute Positioning: breaking element out document flow. No longer respects original block.
+Ignores the rest of the elements around it, overlaps them.
+When scrolling still goes up with page.
+The positioning itself will be dependent of the container it is in.
+You can absolutely position an object within a relative container, which will allow you to position the object anywhere within that container rather than the entire document.
+
+Fixed Positioning: Have you ever seen page elements that do not move even when the page is scrolled? These elements have position:fixed applied, which causes them to be positioned relative to the browser window.
+
+Simpler to set only the x axis or y axis only
+
+
+
+* #id p
+
+* h1 .class
+
+-------------------------
+
+The code doesn't lie, I've noticed that even when its lying, the code doesn't lie.
+
+------------------------
+Jan 22 2020
+
+***EMMITT ABBREVIATION***:
+
+* div.flex-items#${flex item $}*(number) // creates new ID,numbered, can add custom name before dollar sign. Will multiply based on (number) input.
+
+***FLEXBOX*** quick visual: http://flexbox.malven.co/
+-Hard Coding: fix (data or parameters) in a program in such a way that they cannot be altered without modifying the program.
+
+First thing we must do is declare we are using flexbox.
+By default flex items are arranged in a row.
+
+* display:flexbox; * in parent div.
+
+Different properties we can apply to the CONTAINER ITSELF:
+
+* flex-direction: > * row-reverse * row * column * column-reverse *
+* justify-content: > * flex-end * center * space-between * space-around * space-evenly *
+* align-items: > * center * flex-end * flex-start * stretch * baseline // requires condition: different box sizes/font // centers items based on FONT *
+* flex-wrap: // requires overflow within container * > * nowrap // default * wrap-reverse * wrap *
+* align-content: * > * center * flex-start * flex-end * space-evenly * space-between *
+
+Different properties we can apply to the ITEM ITSELF:
+
+* order: > (number of order)// can modify the order of the item within parent container // if no order is input will default to (0) // if you want to group items asing same value *
+* align-self: > * center * flex-start * flex-end * stretch * // if no align-self is input default is stretch *
+* flex-grow: > * 1 * 2 * // modifies the the size of the item in order to fill container space *
+* flex-basis: > // can give items starting size * auto * (pixel/em/etc.) * max-content * min-content * fit-content * fill * inherit * initial * unset *
+
+***FLEX BOX 2 ***
+* FlexBox allows you to align an items vertically and horizontally way faster.
+
+* margin: 0 auto * // centers content horizontally *
+
+* margin-left: / margin-right: > * auto (first item) * // allows dev to create specific amount of space in-between specific items.
+
+^ need more research on this topics.
+
+************* BOX SIZING *********** // It is often useful to set box-sizing to border-box to layout elements. This makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content.  On the other hand, when using position: relative or position: absolute, use of box-sizing: content-box allows the positioning values to be relative to the content, and independent of changes to border and padding sizes, which is sometimes desireable.
+
+* box-sizing // automatically adjust either the content box or the padding/margin around an item to meet which ever specifications are given to it.
+
+* border-box // tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.
+
+* content-box // gives you the default CSS box-sizing behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px.
+
+***** Background image adjust to page size example: ****
+ * background: url(../images/travelHat.jpg) center / cover no-repeat;*
+
+
+---------------------
+
+NTH TYPE :
+
+* change background of container so that you can ID correct area
+
+* familiarize yourself with html structure
+
+* might have to do hard refresh if css does not update.
+
+--------------------
+Programming is more about practicing than studying - a little bit of studying but a lot of practice" - Luis M
+----------------------
+
+Font awesome: source for fonts/logos.
+
+-----------------------
+*** CSS GRID ***
+
+* display:grid; // required IOT display grid.
+* display:inline-grid; // only displays rows and columns.
+*
+
+* grid generator: https://cssgrid-generator.netlify.com/
+
+* start y /start x /finish y /finish x; * // this is the way grid coordinates are expressed in CSS grid.
+// the end number is one less than what is displayed: this is because its saying "this ends at the beginning of "
+* .div1 { grid-area: 1 / 1 / 2 / 11; } * // this would read " div1 = (Y1 - y1) and (x1 - x10) "
+
+* can create a grid within a grid, within a grid etc.
+// will begin using grid generator but with time will not rely on it as much.
+
+* grid-template-columns: 200px 200px 200px; * // sets up 3 columns with the width of 200px *
+// can also be done this way >>>>
+*  grid-template-columns: * >
+* repeat(x, y); * x = columns * y = width *
+* grid-gap: size; * // sets the space in-between cells.
+* grid-column-gap: (size); // sets space in-between columns
+* grid-row-gap: (size); // sets space in-between rows.
+* grid-template: repeat(x, y)/repeat(x, y); // sets rows and columns in one line // row then column
+
+*** Placing Items on Grid ***
+
+EXAMPLE
+        .one {grid-area: 1 / 1 / 2 / 2}
+        .two {grid-area: 1 / 2 / 2 / 3}
+        .three {grid-area: 1 / 3 / 2 / 4}
+        .four {grid-area: 2 / 1 / 3 / 2}
+        .five {grid-area: 2 / 2 / 3 / 3}
+        .six {grid-area: 2 / 3 / 3 / 4}
+        .seven {grid-area: 3 / 1 / 4 / 2}
+        .eight {grid-area: 3 / 2 / 4 / 3}
+        .nine {grid-area: 3 / 3 / 4 / 4}
+EXAMPLE
+
+* coordine -1 represents the end of the row or column.
+
+* // If two items have the same coordinates they will be stacked in the order of the code.
+
+* // in order to have a div extend set the initial coordinate then tell it to go to the end with -1 // start at the beginning go to the end.
+
+* // wrapper: identifies the Size of the container and its properties.
+* // within the class of the element being styled and laid out the coordinates will be determined in the form of grid area IOT identify where the item itself will be placed within the grid of the Wrapper.*
+
+* //with grid we don't have to be as exact with the details of the design, but if we want to we can modify it as necessary	.
+
+BUILT OUT layout 1 6 and 11
+
+Recreate desktop
+
+-----------------------------
+
+*** CSS 2 ***
+
+Bootstrap FrameWork
+* note * // * content: * > * sets up text that will be displayed on page the same way html would but used to specify alternative content when screen size is adjusted.
+
+* Fixed Layout : specified in hardcoded pixel values.
+* fluid layout : the layout is specified in percentages, BUT DOES NOT change based on screenSize .
+* responsive layout : uses media queries to change based on screen size.
+
+* Setting ViewPort : // add meta within head
+*
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ... -->
+</head>
+*
+
+	$$ MEDIA QUEIRES $$
+
+// allow you to make specific css responsive to viewable are of window.
+
+* // if larger than 500 pixels do this //
+/* screen sizes 500px and up */
+@media screen and (min-width:500px) {
+    selector {
+        property: value;
+    }
+}
+
+* // if size is between x and x do this //
+/* screen sizes between 960px and 1200px */
+@media screen and (min-width:960px) and (max-width:1200px) {
+    /* ... */
+}
+*
+
+	$$ BREAK POINTS $$ // major resolution changes which usually BREAK and reposition major elements. Based on most frequent used break points or custom sets can be used.
+
+* example
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width:768px) { /* ... */ }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width:992px) { /* ... */ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) { /* ... */ }
+*
+
+	$$ MOBILE FIRST APPROACH $$
+// If we build for mobile first it will ensure our webpage is compatible with everything off the bat.
+
+_________
+
+Paired Programming :
+
+Driver and navigator
+
+
+------------------------------------
+
+*** Intro To Boot Strap ***
+
+Materialize : by google.
+
+We will be using bootstrap 4 be sure to specify during searches
+
+For bootstrap we will be using a CDN: content delivery frame work
+
+Bootstrap CSS goes first, then our custom css
+
+Bootstrap components are small pieces of a page
+
+Chose what you need, copy it,
+
+Paste in nav bar can modify within code that was pasted
+
+In bootstrap grid: columns bust be in a div class row.
+
+* <div class="row" >Simple Words</div> *
+
+In boostrap the class abbreviation dictate the grid properties. For example * col- * represents the breakpoint for extrasmall screen. * col-sm * represents the breakpoint for a small screen.
+
+The grid is based on multiples of 12
+
+Box shadow gives your page a 3d look for elements.
+
+In order to apply the shadows add it to the class input area
+--------------------------------------------------------------
+
+Gettin Git Bonus
+
+
+<!--header-->
+<!--will use jumbotron will move button to top of page and replace it with "LogIn"-->
+
+<!--intro-->
+<!--Will use a intro container for text -->
+
+<!--introVid-->
+<!--Need to search bootstrap for video options-->
+
+<!--aboutCourse-->
+<!--Need to make 5 cards with bootstrap template-->
+
+<!--there'sMore-->
+<!--Need to make 3 cards-->
+
+<!--getGettinGitCards-->
+<!--3 cards with different dimenssions -->
+
+<!--frequentlyAskedQuestions-->
+<!--will use container for text will style with inline CSS-->
+
+<!--whoIsJmac?-->
+<!--will use an image card from bootsrap-->
+
+
+
+
+
+Action Bikes
+
+---------------------
+***BOOTSTRAP GRID***
+
+We'll start by putting all of our content in a container, then define a row, which will contain multiple columns.
+
+*
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            Content goes here....
+        </div>
+    </div>
+</div>
+
+*
+
+The content in the div with the class of col-md-6 will take up 6 columns (i.e. 50% width) on any medium or larger sized screen. On screens smaller than medium, the content will take up the full width.
+
+In general, Bootstrap's column classes follow this naming convention:
+*
+col-*-*
+*
+Where the first star is one of sm, md, lg, or xl to indicate the screen size, and the second star is a number between 1 and 12 to indicate the number of columns. (You can also omit the screen size to always have columns regardless of screen size).
+
+Different screen sizes can be combined
+*
+<div class="col-lg-3 col-md-6">
+*
+
+<div class="container">
+-------------------------------
+
+How to succeed at codeup:
+
+----------
+Cant find a mentor for business.
+Connecting mentors with entrepernuers
+A database which connects social media accounts and users based on mentor status or mentee and connect each other based on industry and location of interest.
+
+Finding a clean restroom is a hassle.
+Use a yelp style app for rating restrooms.
+Partners could offer coupons to those who contribute in the building of this database, helps end user find a clear restroom and, also helps business acquire more foot traffic.
+
+Fighting specific fears can be difficult.
+Connect users who live extreme lifestyles with those who want to overcome a fear.
+User will be connected based on interest and fears, they will coordinate in order to engage in activity.
+
+------------------------------------
+Divorce Party 2020
+
+Recently divorced in SA area.
+Within a year.
+
+Mixer
+
+This Saturday
+
+Hotel Lobby
+
+In order to re connect recent divorcees;
+
+----------------------------------------
+
+JS
+
+In JS an empty string has the value of false
+A string with content has the value of true.
+
+When asking * .indexOF(x): * and get a return of * -1 * that means that it could not find it.
+
+* var classfull = false;
+* var classAtEight = false;
+* var studentCanSignUp = !classFull && !classAtEight;
+
+* returns true *
+
+var strongPassWord = password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username.trim() === username && password.trim() === password
+
+-----------------------------------------
+
+HMTL and JS
+
+Console log : used for testing.
+
+Inline JS
+
+If using inline JS must insert JS code within
+* <script> </script> * tags
+
+External JS : JS which is added to an external JS file.
+Its better because it makes it more : Maintainable, readable, usable. ( keeping your code "dry" )
+
+<script src="js/external.js"></script>
+
+Inside of external JS page script tags are not needed.
+
+* "use strict"; * : forces js to error check more than normal. Should use it all the time. Auto error checking.
+
+-	 - 	- 	-	-	-	-	-	-	-	-
+
+
+Built in user interaction:
+
+Alert: dialog pop up message
+	* alert("you are a winner"); *
+
+Confirm: confirms before action is taken.
+	* confirm("Are you still watching?"); *
+	Will return a true or false in the console.
+	Optional to use it as a variable.
+
+Prompt: User interaction user prompt.
+	 * userPrompt("what is your favorite animal?"); *
+
+Var fullClass = false
+Var Time	= false
+
+-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+
+Functions
+
+Paramater vs Argument
+
+Paramater : Place holer or variable.
+Argument : the input that actually goes in to the function when called.
+
+After * return * the rest of the code will not be read.
+
+When writing a function and don't use a * return * it will not be referenced.
+For example if you console log you will not be able to use that information if trying to use later.
+

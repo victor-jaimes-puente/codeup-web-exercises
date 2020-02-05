@@ -11,20 +11,20 @@
 // How long will you be renting the movies for?
 // How much does it cost to rent a movie for 1 day?
 
-// var movie1Days = Number(prompt("For how many days do you plan rent the first movie?"));
-// console.log(movie1Days);
-// console.log(typeof movie1Days);
-// var movie2Days = Number(prompt("For how many days do you plan rent the second movie?"));
-// console.log(movie1Days);
-// console.log(typeof movie1Days);
-// var movie3Days = Number(prompt("For how many days do you plan rent the first movie?"));
-// console.log(movie1Days);
-// console.log(typeof movie1Days);
-// var costPerDay = Number(3);
-// var totalCost = (movie1Days + movie2Days + movie3Days) * costPerDay;
-// console.log(totalCost);
-// alert("Your total cost comes out to " + totalCost + " dollars.");
-//
+var movie1Days = Number(prompt("For how many days do you plan rent the first movie?"));
+console.log(movie1Days);
+console.log(typeof movie1Days);
+var movie2Days = Number(prompt("For how many days do you plan rent the second movie?"));
+console.log(movie1Days);
+console.log(typeof movie1Days);
+var movie3Days = Number(prompt("For how many days do you plan rent the first movie?"));
+console.log(movie1Days);
+console.log(typeof movie1Days);
+var costPerDay = Number(3);
+var totalCost = (movie1Days + movie2Days + movie3Days) * costPerDay;
+console.log(totalCost);
+alert("Your total cost comes out to " + totalCost + " dollars.");
+
 // var company1Pay = Number(prompt("How much does Facebook pay per hour?"));
 // var company2Pay = Number(prompt("How much does Amazon pay per hour?"));
 // var company3Pay = Number(prompt("How much does Google pay per hour?"));
@@ -37,15 +37,27 @@
 // var totalPayWeek = totalCompany1 + totalCompany2 + totalCompany3;
 // alert(" Your total pay for the week will be " + totalPayWeek);
 
-// var classFull = prompt("Is the class full?");
-// var classTime = prompt("Does the class conflict with schedule?");
-// if ((classFull === "No") || (classTime === "no") || (classTime === "NO") && (classTime === "No") || (classTime === "no") || (classTime === "NO") ){
-//     alert("Student may enroll");
-// }
-// else {
-//     alert("Student my not enroll")
-// }
-var premium = prompt("Are you a premium member?");
-var moreThan2Items = prompt("Did you purchase more than two items?");
-var expired = prompt("Is the coupon expired?");
-       
+var classFull = prompt("Is the class full?");
+var classTime = prompt("Does the class conflict with schedule?");
+if ((classFull === "No") || (classTime === "no") || (classTime === "NO") && (classTime === "No") || (classTime === "no") || (classTime === "NO") ){
+    alert("Student may enroll");
+}
+else {
+    alert("Student my not enroll")
+}
+
+// find out if member is premium
+// if premium skip item question
+// find out if member purchased more than 2 items
+// find out if coupon is expired
+//
+// var premium = prompt("Are you a premium member?");
+// var moreThan2Items = prompt("Did you purchase more than two items?");
+// var expired = prompt("Is the coupon expired?");
+//
+// var numberofItems = Number(prompt("How many items?"));
+// var offIsValid = confirm("Is the offer valid?");
+// var isPremiumMebmer = confirm("Are you a premium member");
+//
+// var discountAppliedStatus =  offIsValid && (isPremiumMebmer || numberofItems);
+// alert("Can use discount" + discountAppliedStatus);
