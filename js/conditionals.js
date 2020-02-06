@@ -1,4 +1,6 @@
 "use strict";
+(function () {
+
 
 /**
  * TODO:
@@ -14,7 +16,40 @@
  * do *not* display any of the above information.
  *
  * Can you refactor your code to use functions?
+ *
+ * //Create a prompt which ask user if they would like to input a number -> if yes
+ *  // have user input a number on the next prompt
+ *
+ *  // first prompt: even or odd?
+ *  // second prompt: number + 100
+ *  // third prompt: neg or pos.
+ *
  */
+// var firstQuestion = confirm("Would you like to enter a number?");
+//         if (firstQuestion) {
+//         console.log("firstQuestion: Yes");
+//         var userNumber = Number(prompt("Please enter a number"));
+//         console.log("user number " + userNumber);
+// // evenOrOdd
+//          if ((userNumber %2 ) === 0 ){
+//          console.log("UserNumberEven")
+//          alert("Your number is Even")
+//         }else {
+//          alert("Your Number is Odd")
+//          console.log("userNumberOdd")}
+// // userNumber plus 100
+//          alert("Your number plus 100 is: " + (userNumber + 100));
+//          console.log("added 100 to user number");
+// // posOrNeg
+//         if (userNumber >= 0){
+//             console.log("User number is positive");
+//             alert("Your number is Positive.");
+//         }else{console.log("UserNumber is Negative");
+//              alert("Your number is negative.")}
+//     }
+//
+//
+
 
 /* ########################################################################## */
 
@@ -34,8 +69,45 @@
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
+ *
+ *
+ * // analyzeColor
+ * // input: string of a color name
+ * // only include colors below when matching
+ * // else: I dont understand that input
+ *
  */
 
+function analyzeColor(color) {
+    var returnColor = '';
+ if (color === 'red'){
+     console.log('red');
+     returnColor = "Apples are Red";
+ }else if ((color === 'orange')){
+     console.log('orange');
+     returnColor = "Orange is soothing";
+ }else if ((color === 'yellow')){
+     console.log('yellow');
+     returnColor = "I hate yellow teeth";
+ }else if (color === 'green'){
+        console.log("green");
+       returnColor = "Green is the color of money";
+ }else if (color === 'blue'){
+        console.log("blue");
+       returnColor= "the sky is blue, because go loves the infantry.";
+ }else if (color === 'indigo'){
+        console.log("indigo");
+        returnColor =  "Indigo, IDK amigo";
+ }else if (color === 'violet'){
+        console.log("violet");
+        returnColor = "Violet? More like Violent lol";
+
+ }else { returnColor = "We dont recognise that color."
+ }
+
+    console.log(returnColor);
+ }
+ analyzeColor('blue');
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -92,3 +164,5 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+})();
