@@ -774,4 +774,238 @@ Immediately-Invoked Function
         git merge "nameOfBranch"
         'ctrl + x'
 
+        create a new branch and switch right over to it. :
+        *
+        git checkout -b "name of branch"
+        *
+
+-   -   -   -   -   -   -   -   -   -   -
+*** Conditionals ***
+
+If Else :
+
+    // Following an if statement, you can have an else statement. The code in the else statement will get executed when the condition in the if statement evaluates to false.
+        *
+        // if/else example
+        if (condition) {
+            // code here gets executed if condition evaluates to true
+        } else {
+            // code here gets executed if condition evaluates to false
+        }
+        *
+
+    // One can chain multiple else conditions by using * else if *
+        *
+        // if/else if/else example
+        if (condition1) {
+            // code here gets executed if condition1 evaluates to true
+        } else if (condition2) {
+            // code here gets executed only if condition1 is false *and*    condition2 evaluates to true
+        } else {
+            // code here gets executed if neither condition1 nor condition2 evaluate to true
+        }
+        *
+      ## NOTE ## : The final * else * statement is not needed here ^^
+
+     // var homeworkIsDone = true;
+        if (homeworkIsDone ) {
+        * code *
+        }
+        *
+ELSE STATEMENT
+
+    if so, do this, ELSE do this.
+
+
+
+
+
+
+ternary operators : used for very large files where you have to repeat the same if statement over and over
+
+*** Switch staements *** Cleaner
+*
+switch(pizzaPreference) {
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break;
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break;
+}
+*
+
+//case : does the same thing as  * if *
+//break : included so that once the match is found the function stops searching.
+//default : does the same as * else *, good practice to add * break * after * default *
+CONVERTING IF ELSE TO SWITCH
+* IF ELSE
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+switch(pizzaPreference) {
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break;
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break;
+}
+*
+
+* SWITCH
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+switch(pizzaPreference) {
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break;
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break;
+}
+
+*
+SWITCH TO FUNCTION
+
+var pizzaChoice = (prompt("What kind of pizza do you like?")).toLowerCase();
+console.log("User pizza input: " + pizzaChoice);
+
+function pizzaMessage(pizzaPreference) {
+    var pizzaConfirmation; // string with confirmation message
+
+    switch(pizzaPreference) {
+        case "pineapple and hot sauce":
+            pizzaConfirmation = "What a coincidence, I love that one too";
+            break;
+        case "cheese":
+            pizzaConfirmation = "Just plain cheese... okay.";
+            break;
+        case "ham":
+            pizzaConfirmation = "Ham is easy to spell and awesome";
+            break;
+        default:
+            pizzaConfirmation = pizzaPreference + " isn't my favorite, but let's order some.";
+            break;
+    } // end of switch
+
+    return pizzaConfirmation;
+}
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

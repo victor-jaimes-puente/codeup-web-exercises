@@ -78,7 +78,7 @@ function calculateTip(percentage, total){
     return (percentage * total) ;
 }
 console.log(calculateTip(.20, 20));
-console.log(calculateTip(0.25, 25.50))
+console.log(calculateTip(0.25, 25.50));
     console.log(calculateTip(0.15, 33.42));
 
     /**
@@ -113,7 +113,7 @@ console.log(calculateTip(0.25, 25.50))
  3 return the regular price minus discount.
  */
 function applyDiscount(regularPrice, discount){
-    return regularPrice * discount;
+    return regularPrice - ( regularPrice * discount);
 }
 console.log(applyDiscount(50, .2));
 })();
