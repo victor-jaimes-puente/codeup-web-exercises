@@ -902,10 +902,29 @@ function pizzaMessage(pizzaPreference) {
 *
 
 
+-   -   -   -   -   -   -   -   -   -   -   -   --  -   -   -
+
+IOT clone :
+Github >> repository page >> click clone or download >> copy link
+intelij -> file -> new -> project from version control >> paste link in to url section.
 
 
 
+git checkout -b victor-jaimes-puente
+git branch // showed branch name
+// made a change
+git status // saw the change
+git add
+git commit
 
+// THIS IS WHAT IS DIFFERENT
+git push origin victor-jaimes-puente
+
+READ THE READ ME!!!!!
+
+index.html is where you can access the testor >> got to spec list : Will show you why the code is not working
+
+When wanting it to go green refresh over and over just incase
 
 
 

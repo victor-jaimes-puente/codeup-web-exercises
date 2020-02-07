@@ -25,30 +25,30 @@
  *  // third prompt: neg or pos.
  *
  */
-// var firstQuestion = confirm("Would you like to enter a number?");
-//         if (firstQuestion) {
-//         console.log("firstQuestion: Yes");
-//         var userNumber = Number(prompt("Please enter a number"));
-//         console.log("user number " + userNumber);
-// // evenOrOdd
-//          if ((userNumber %2 ) === 0 ){
-//          console.log("UserNumberEven")
-//          alert("Your number is Even")
-//         }else {
-//          alert("Your Number is Odd")
-//          console.log("userNumberOdd")}
-// // userNumber plus 100
-//          alert("Your number plus 100 is: " + (userNumber + 100));
-//          console.log("added 100 to user number");
-// // posOrNeg
-//         if (userNumber >= 0){
-//             console.log("User number is positive");
-//             alert("Your number is Positive.");
-//         }else{console.log("UserNumber is Negative");
-//              alert("Your number is negative.")}
-//     }
-//
-//
+var firstQuestion = confirm("Would you like to enter a number?");
+        if (firstQuestion) {
+        console.log("firstQuestion: Yes");
+        var userNumber = Number(prompt("Please enter a number"));
+        console.log("user number " + userNumber);
+// evenOrOdd
+         if ((userNumber %2 ) === 0 ){
+         console.log("UserNumberEven")
+         alert("Your number is Even")
+        }else {
+         alert("Your Number is Odd")
+         console.log("userNumberOdd")}
+// userNumber plus 100
+         alert("Your number plus 100 is: " + (userNumber + 100));
+         console.log("added 100 to user number");
+// posOrNeg
+        if (userNumber >= 0){
+            console.log("User number is positive");
+            alert("Your number is Positive.");
+        }else{console.log("UserNumber is Negative");
+             alert("Your number is negative.")}
+    }
+
+
 
 
 /* ########################################################################## */
@@ -241,9 +241,19 @@ function calculatedTotal(luckyNumber, cost) {
  * Prompt the user for their total bill, then use your `calculateTotal` function
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
+    prompt user for total bill
+    then apply according discount
  */
+
+
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+
+
+ var totalCost = prompt("What is your total cost?");
+ console.log(totalCost);
+ console.log(luckyNumber);
+ alert(calculatedTotal(luckyNumber, totalCost));
 
 // ------  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
 
