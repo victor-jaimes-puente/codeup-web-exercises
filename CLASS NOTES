@@ -933,6 +933,31 @@ In addition to Number() there are two specialized functions that are more forgiv
 parseInt: attempts to convert a string to an integer value
 parseFloat: attempts to convert a string to a floating point (i.e. decimal) value
 
+-   -   -   -   -   -   -   -   -   -   -
+In JavaScript, strings are immutable, meaning they will not change. We can update a variable that holds a string to contain a different string, but the original string object is not changed.
+
+In addition, all of the methods above will not modify the original string, instead they produce a new string. Notice in the code block below how the variable is not changed:
+
+
+var myString = 'javascript is cool!';
+myString.toUpperCase(); // 'JAVASCRIPT IS COOL!'
+myString; // 'javascript is cool!'
+
+-   -   -   -   -   -   -   -   -   -   -
+
+Anonymous Functions
+Including a name for our functions is actually optional. To define a function we can also create an anonymous function (that is, a function without a name), and store it in a variable.
+
+
+var increment = function(x) {
+    return x + 1;
+};
+
+var two = increment(1);
+
+-   -   -   -   -   -   -   -   -   -   -   -   -
+
+
 
 
 
