@@ -926,6 +926,13 @@ index.html is where you can access the testor >> got to spec list : Will show yo
 
 When wanting it to go green refresh over and over just incase
 
+----    -   -   -   -   -   -   -   -   -   -
+
+In addition to Number() there are two specialized functions that are more forgiving:
+
+parseInt: attempts to convert a string to an integer value
+parseFloat: attempts to convert a string to a floating point (i.e. decimal) value
+
 
 
 
