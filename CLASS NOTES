@@ -957,6 +957,43 @@ var two = increment(1);
 
 -   -   -   -   -   -   -   -   -   -   -   -   -
 
+Arguments / Parameters
+We have been using these terms already, but formally, an argument is the value that a function is called with, and a parameter is part of the function's definition. A function is defined with zero or more parameters and called with zero or more arguments.
+
+So far, we've just defined a function with a single input. Let's look at an example of multiple different inputs.
+
+ If a function is defined with zero parameters, all arguments passed to the function will be ignored. Similarly, if a function does not have a return statement, the return value will be undefined.
+
+-   -   -   -   -   -   -   -   -   -   -
+While Loops
+A while loop is a basic looping construct that will execute a code block as long as a certain condition is true. For example:
+
+Syntax:
+
+
+while (/*condition*/) {
+    // body
+}
+-   -   -   -   -   -   -   -   -   -   -   -   -
+
+Do While
+A do-while loop is only different from a while in that the condition is evaluated at the end of the loop instead of the beginning. For example:
+
+Syntax:
+
+
+do {
+    //body
+} while(/*condition*/);
+
+-   -   -   -   -   -   -   -   -   -
+Page that shows how to create a function that will check what type of data the input is :
+
+https://webbjocke.com/javascript-check-data-types/
+
+-   -   -   -   -   -   -   -   -   -   -   -   -
+
+
 
 
 
