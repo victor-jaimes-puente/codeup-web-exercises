@@ -1,4 +1,6 @@
 .idea/*
 *.iml
 .DS_STORE
-
+test-ignore.js
+test-ignore.html
+test-ignore.css
