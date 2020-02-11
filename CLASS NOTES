@@ -1003,8 +1003,10 @@ Inteli J copuons
 https://github.com/CodeupClassroom/fortuna-first-js-assessment
 -   -   -   -   -   -   -
 
-** TEST DRIVEN DEV **
 
+/*********************************************
+ *             ** TEST DRIVEN DEV **
+ *********************************************/
 1. Step 1: Write the smallest possible test: Identify the simplest, smallest thing you want to confirm. For example, before a function exists, assert that the function is defined.
 2. Step 2: Run all the tests to ensure that the new test fails. We're **supposed** to see a red, failing test, since there's no code yet to green it. Red means we did the first step correctly. Seeing the newest test turn red is critical because our tests drive the development, not the other way around.
 3. Step 3: Write only enough code to green that newest test. No more, no less. It's OK if things are hard-coded here.
@@ -1036,17 +1038,106 @@ git pull origin master
 checkout back to testBranch
 git merge master
 
+--- -   -   -   -   -   -   -   -
+/*********************************************
+ *               LOOPS
+ *********************************************/
+
+
+Loops are strucutes that allow us to run code repeateldly
+
+/*********************************************
+ *               WHILE LOOPS
+ *********************************************/
+
+
+A while loop will run WHILE a certain condition is true
+while (condition) {
+ code runs.
+}
+
+
+/*********************************************
+ *               DO-WHILE LOOPS
+ *********************************************/
+// A do/while loop will run at least once.
+
+// do {
+//  Code to be run.
+// } while (condition)
+
+/*********************************************
+ *               FOR-LOOPS
+ *********************************************/
+
+// For loops: Loops that are designed to run a given number of times.
+// Like a while loop but with the Var included
+initializaiton of variable
+condition
+incrementation
+
+// for (/*initialization*/; /*condition*/; /*increment*/) {
+// 	// body
+// }
+
+example :
+for (var i = 0; i < 10; i++){
+  console.log(i);
+}
+
+FizzBuzz
+
+
+for (var i = 0; i < 101; i++){
+
+  var div3 = (i % 3);
+  var div5 = (i % 5);
+  if ( i % 15 === 0){
+    console.log( i + " FizzBuzz");
+  }
+  else if(div3 ===0){
+    console.log(i + " Fizz");
+  }else if(div5 ===0){
+    console.log(i + " Buzz");
+  }else {console.log(i)}
+}
+
+/*********************************************
+ *              BREAKS & CONTINUES
+ *********************************************/
+// We can get a loop to stop using break;
+
+var numberToStopAt = 5;
+
+for (var i = 1; i < 100; i++) {
+
+	console.log('Loop counter is: ' + i);
+
+	if (i === numberToStopAt) {
+		console.log('We have reached the stopping point: break!');
+		// use the break keyword to exit from the while loop
+		break;
+		// nothing after the break will get processed
+		console.log('You will never see this line.');
+	}
+}
+
+// We can get an iteration to skip using continue;
+for (var i = 1; i < 100; i++) {
+
+	if (i % 2 !== 0) {
+		// skipping all odd numbers;
+		continue;
+	}
+
+	console.log('Here is a lovely even number: ' + i);
+}
 
 
 
-
-
-
-
-
-
-
-
+/*********************************************
+ *
+ *********************************************/
 
 
 
