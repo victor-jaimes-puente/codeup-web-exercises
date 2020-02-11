@@ -1136,13 +1136,67 @@ for (var i = 1; i < 100; i++) {
 
 
 /*********************************************
- *
+ *      Team Projects With Git and Github
  *********************************************/
 
 
 
 
+Setting up A Project
+One team member will do the following
 
+create an organization
+add team members to it
+give the team members priveleges on the repository
+create a repository and push existing code up
+The other team members will
+
+clone the repository
+All team members will
+
+create branches for the features they will be working on
+open pull requests for those branches
+not commit on or push the master branch
+Pull Requests
+When working in teams, it is very helpful to have a formal process around merging changes into master. While it might be tempting, in a team environment, you should not make any changes to the master branch, instead we will create separate branches to do our work in, and merge them into master.
+
+A pull request is a formal process for merging a branch. A pull request should be for a specific feature, and the pull request should contain the following information:
+
+what changes were made
+why those changes were made
+a description of any conflicts or changes to existing work
+the implications of merging this branch
+for example, will your teamates need to re-migrate their database?
+To merge your branch into master:
+
+Push your branch to github
+Create a pull request for your branch
+Ask a team member to look over the pull request
+Make any changes necessary after the pull request has been reviewed
+Have a team member merge your pull request
+Common Questions/Problems
+How do I get the most recent changes to the project?
+
+Make sure you have commited any changes to anything you are currently working on.
+Switch to your master branch.
+Pull the changes from origin/master
+Switch back to your branch
+Merge master into your branch
+After opening a pull request, github says this branch can't be automatically merged
+
+This most likely means your branch is behind the current master branch.
+
+Swith to your master branch
+Pull the changes from origin/master
+Switch to the branch you just opened a pull request for
+Merge master into your branch
+Solve any conflicts that arise from the merge
+Push your branch up to github
+Now github should say that you are able to merge your branch.
+
+/*********************************************
+ *
+ *********************************************/
 
 
 
