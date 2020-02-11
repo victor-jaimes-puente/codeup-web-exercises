@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    (function () {
+
 
 
 
@@ -264,11 +264,18 @@
             // undefined
             // addOne(2);
             // 3
-          function median(value){
-              if (vlues)
+          function median(values) {
+              if (vlues.length === 0) return 0;
+              console.log(values);
+
+              values.sort(function (a, b) {
+                  console.log(a -b);
+                  return a - b;
+              });
           }
 
-    })();
+console.log(median([1,2,3,4,5]))
+
 </script>
 </body>
 </html>
