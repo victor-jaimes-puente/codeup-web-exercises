@@ -1,3 +1,5 @@
+"use strict";
+
 /* While loop that console logs
 2
 4
@@ -38,7 +40,7 @@ Math.floor(Math.random() * 5) + 1;
 *  */
 
 
-    // do {
+ //CONES
     var allCones = Math.floor(Math.random() * 50) + 50;
     var conesSold = Math.floor(Math.random() * 5) + 1;
 
@@ -51,3 +53,6 @@ Math.floor(Math.random() * 5) + 1;
         allCones--;
         console.log(allCones);
     }while (allCones >= 1);
+
+//EndOfCones
+
