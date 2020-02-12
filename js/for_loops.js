@@ -15,5 +15,8 @@ function showMultiplicationTable(input){
     }
 }
 
-//FunctionCall
-console.log(showMultiplicationTable(7));
+function getRandomNumber() {
+    console.log(Math.random() * (200 - 20) + 20);
+}
+
+console.log(getRandomNumber());
