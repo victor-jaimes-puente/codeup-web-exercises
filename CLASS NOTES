@@ -1195,11 +1195,215 @@ Push your branch up to github
 Now github should say that you are able to merge your branch.
 
 /*********************************************
- *
+ *    ARRAYS
+ *********************************************/
+ ● An array is a list and holds values
+ ● Arrays are denoted by square brackets []
+ ● The items in an array are called elements
+ ● Elements are separated by commas
+ ● Arrays are 0 indexed
+
+An array is a data structure that holds an ordered list of items. Each slot in a JavaScript array can hold any type of data.
+*****Counting Array Items
+To find out how many items are in an array, you can use the length property. Here is an example:
+
+
+*
+var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+
+console.log(shapes.length); // 4
+*
+
+
+*****Iterating Arrays
+    To iterate means to repeat a process to achieve a desired result. When you iterate over an array, it means that you cycle/traverse through the indices and elements of the array. We can use the looping statements we learned earlier to iterate through arrays in JavaScript.
+
+Iterating Arrays -
+
+For Loop
+*
+for(initial variable; condition; increment) {
+// body statement here
+}
+for(var i = 0; i < 10; i++) {
+console.log(array[i]);
+}
+*
+
+Iterating Arrays -
+For Each Loop
+*
+someArray.forEach(function(element, index, array) {
+// body statement
+})
+movies.forEach(function(movie, index, db) {
+// element = movie, index = index,
+*
+
+Iterating Arrays -
+*
+For Each Loop
+movies.forEach(function(element, index, array) {
+console.log(element); // the value in this element
+console.log(index); // current index (0, 1, 2, etc)
+console.log(array); // the full Array (movies)
+})
+*
+
+
+Iterating Arrays -
+For Each Loop (Pluralizing)
+*
+// pluralize the array, singularize the element
+// movies - array / movie - element
+movies.forEach(function(movie) {
+console.log(movie + “ is a great movie!”);
+})
+*
+
+.forEachLoops
+*Syntax*
+arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
+Parameters
+callback
+Function to execute on each element. It accepts between one and three arguments:
+currentValue
+The current element being processed in the array.
+index Optional
+The index currentValue in the array.
+array Optional
+The array forEach() was called upon.
+thisArg Optional
+Value to use as this when executing callback.
+*
+
+For Loop VS. For Each Loop
+
+FOR LOOP
+● PROS: Variety of options
+● CONS: More complicated syntax
+● USE: When you need to iterate
+partially or backwards through an
+array
+
+FOR EACH LOOP
+● PROS: Simpler syntax
+● CONS: Can only iterate through
+entire array
+● USE: When you need to iterate
+through entire array
+
+
+/*********************************************
+ * Manipulating Arrays *
  *********************************************/
 
+*****Adding Elements
+    push : add item to the end of an array
+*
+ var daysOfTheWeek= ['Monday','Tuesday','Wednesday','Thursday','Friday'];
+ daysOfTheWeek.push('Friday');
+ *
+
+    unshift : add item to the beginning of an array
+*
+    var daysOfTheWeek = ['Monday', 'Tuesday',
+    'Wednesday', 'Thursday', 'Friday'];
+    daysOfTheWeek.unshift('Sunday');
+*
+
+*****Removing Elemnets
+    pop : remove last item of an array
+*
+var daysOfTheWeek = ['Monday', 'Tuesday',
+'Wednesday', 'Thursday', 'Friday'];
+var lastDay = daysOfTheWeek.pop();
+// console.log(lastDay) => Friday
+*
+
+    shift : remove first item of an array
+*
+var daysOfTheWeek = ['Monday', 'Tuesday',
+'Wednesday', 'Thursday'];
+var firstDay = daysOfTheWeek.shift();
+// console.log(lastDay) => Monday
+*
+
+*****Locating Elements
+    indexOf : first occurrence of item in array
+*
+var colors = ['red', 'green', 'blue', 'orange',
+'red'];
+var index = colors.indexOf('red');
+// console.log(index) => 0
+*
+
+    lastIndexOf : last occurrence of item in array
+*
+var colors = ['red', 'green', 'blue', 'orange',
+'red'];
+var index = colors.lastIndexOf('red');
+// console.log(index) => 4
+*
+
+*****Slicing Arrays : Copy a portion of an array
+slice(x,y) : copy array elements from
+index x to y
+
+*
+var temps = [42, 49, 51, 47, 62];
+ var someTemps = temps.slice(2,4); // 2 through 4 //
+ // console.log(someTemps) => [51, 47, 62]
+ *
+
+***Reversing Arrays : Flip it around
+* original
+var temps = [62, 47, 51, 49, 42];
+temps.reverse();
+* after
+var temps = [42, 49, 51, 47, 62];
+*
+
+Sorting Arrays : Organize
+* original
+colors = ['red', 'green', 'blue', 'orange'];
+colors.sort();
+*after
+var colors = ['blue', 'green', 'orange', 'red'];
+//Alphabetical
+*
 
 
+**** Converting between String & Array
+    splitting : will take a string and turn it into
+    an array, using a separator
+*
+var nString = 'vivian,david,casey';
+var nArray = nString.split(',');
+into an Array
+// console.log(nArray) => ['vivian', 'david', 'casey']
+*
+    joining : will take an array and turn it into a
+    string, separating elements with a delimiter
+
+*
+var nArray = ['vivian', 'david', 'casey'];
+var nString = nArray.join(',');
+into Strings
+// console.log(nString) => 'vivian,david,casey'
+*
+/*********************************************
+ *  *
+ *********************************************/
+/*********************************************
+ *  *
+ *********************************************/
+ /*********************************************
+  *  *
+  *********************************************/
+  /*********************************************
+   *  *
+   *********************************************/
 
 
 

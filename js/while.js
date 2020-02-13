@@ -40,19 +40,19 @@ Math.floor(Math.random() * 5) + 1;
 *  */
 
 
- //CONES
-    var allCones = Math.floor(Math.random() * 50) + 50;
-    var conesSold = Math.floor(Math.random() * 5) + 1;
-
-    do {
-        allCones -= conesSold;
-        console.log(allCones);
-        console.log(conesSold + " ConesSold");
-    } while ( allCones >= 6);
-    do {
-        allCones--;
-        console.log(allCones);
-    }while (allCones >= 1);
-
-//EndOfCones
+//  //CONES
+//     var allCones = Math.floor(Math.random() * 50) + 50;
+//     var conesSold = Math.floor(Math.random() * 5) + 1;
+//
+//     do {
+//         allCones -= conesSold;
+//         console.log(allCones);
+//         console.log(conesSold + " ConesSold");
+//     } while ( allCones >= 6);
+//     do {
+//         allCones--;
+//         console.log(allCones);
+//     }while (allCones >= 1);
+//
+// //EndOfCones
 
