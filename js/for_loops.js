@@ -49,9 +49,9 @@ will create a function that prints multiplication table of a number based on the
 //     console.log(i.toString().repeat(i));
 // }
 
-for ( var i = 100; i > 0; i-=5){
-    console.log(i);
-}
+// for ( var i = 100; i > 0; i-=5){
+//     console.log(i);
+// }
 
 
 
