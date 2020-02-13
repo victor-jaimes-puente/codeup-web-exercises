@@ -15,8 +15,14 @@ function showMultiplicationTable(input){
     }
 }
 
-function getRandomNumber() {
-    console.log(Math.random() * (200 - 20) + 20);
+console.log(showMultiplicationTable(7));
+function randomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
 }
 
-console.log(getRandomNumber());
+for (var i = 1; i <= 10; i++){
+    var numList = (randomNumber(20,200) + " =");
+    console.log(numList);
+}
