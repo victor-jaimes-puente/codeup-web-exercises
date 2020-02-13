@@ -1,5 +1,5 @@
 "use strict";
-
+// Finished
 /* While loop that console logs
 2
 4
