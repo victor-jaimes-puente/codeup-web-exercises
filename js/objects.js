@@ -1,4 +1,4 @@
-(function() {
+// (function() {
     "use strict";
 
     /**
@@ -11,17 +11,26 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-
+// var person = {
+//     firstName : "Victor"
+//     };
+//  person.lastName = "Jaimes-Puente";
+//
+//     console.log(person);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
      * the firstName and lastName properties.
-     * console.log the returned message to check your work
+     * console.log the returned message to check your work[
+     *
      *
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+// person.sayHello = function(){
+//     console.log("Hello from " + this.firstName + this.lastName);
+// }
+// person.sayHello();
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -35,12 +44,22 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
+    // more than 200 12% discount
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+shoppers.forEach(function (shopper) {
+    if (shopper.amount < 200){
+        console.log(false + " " + shopper.name);
+    }else if( shopper.amount > 200){
+        var disc = shopper.amount * .12;
+        console.log( disc + shopper.amount +" "+ shopper.name);
+    }
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +73,16 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+// array of objects named books
+// each object should have a title and author
+// author property should be an object with a firstName and lastName attributes
+// atleast 5 books
+    var books = [
+        bookObj1, bookObj2, bookObj3
+    ];
+   var bookObj1 = {title: "Book1", author: "writer", firstName: "Name1", lastName:"lName1"};
+   var bookObj2 = {title: "Book2", author: "writer", firstName: "Name2", lastName:"lName2"};
+   var bookObj3 = {title: "Book3", author: "writer", firstName: "Name3", lastName:"lName3"};
 
     /**
      * TODO:
@@ -91,4 +120,4 @@
      *   `showBookInfo` function.
      */
 
-})();
+// })();
