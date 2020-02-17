@@ -46,19 +46,19 @@
      */
     // more than 200 12% discount
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-shoppers.forEach(function (shopper) {
-    if (shopper.amount < 200){
-        console.log(false + " " + shopper.name);
-    }else if( shopper.amount > 200){
-        var disc = shopper.amount * .12;
-        console.log( disc + shopper.amount +" "+ shopper.name);
-    }
-
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+// shoppers.forEach(function (shopper) {
+//     if (shopper.amount < 200){
+//         console.log(false + " " + shopper.name);
+//     }else if( shopper.amount > 200){
+//         var disc = shopper.amount * .12;
+//         console.log( disc + shopper.amount +" "+ shopper.name);
+//     }
+//
 
 
     /** TODO:
@@ -77,12 +77,49 @@ shoppers.forEach(function (shopper) {
 // each object should have a title and author
 // author property should be an object with a firstName and lastName attributes
 // atleast 5 books
-    var books = [
-        bookObj1, bookObj2, bookObj3
-    ];
-   var bookObj1 = {title: "Book1", author: "writer", firstName: "Name1", lastName:"lName1"};
-   var bookObj2 = {title: "Book2", author: "writer", firstName: "Name2", lastName:"lName2"};
-   var bookObj3 = {title: "Book3", author: "writer", firstName: "Name3", lastName:"lName3"};
+var books = [
+    {
+        title: "Libro1",
+        author: {
+            first:"FirstName1",
+            last: "LastName1"
+        }
+    },
+    {
+        title:"Libro2",
+        author: {
+            first: "FirstName2",
+            last: "LastName2"
+        }
+    },
+    {
+        title:"Libro3",
+        author: {
+            first:"FirstName3",
+            last:"LastName3"
+        }
+    },
+    {
+        title:"Libro4",
+        author:{
+            first:"FirstName4",
+            last:"LastName4"
+        }
+    },
+    {
+        title:"Libro5",
+        author:"FirstName5",
+        last:"LastName5"
+    }
+];
+
+
+
+
+
+
+
+
 
     /**
      * TODO:
