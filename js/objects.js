@@ -108,13 +108,16 @@ var books = [
     },
     {
         title:"Libro5",
-        author:"FirstName5",
-        last:"LastName5"
+        author: {
+            first: "FirstName5",
+            last: "LastName5"
+        }
     }
 ];
-
-
-
+for (var i = 0; i < books.length ; i++){
+console.log(books[i].title);
+    console.log(books[i].author);
+}
 
 
 
