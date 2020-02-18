@@ -45,19 +45,20 @@
      * and console.log the relevant messages for each person
      */
     // more than 200 12% discount
-
+// function shopperDisc() {
 //     var shoppers = [
 //         {name: 'Cameron', amount: 180},
 //         {name: 'Ryan', amount: 250},
 //         {name: 'George', amount: 320}
 //     ];
-// shoppers.forEach(function (shopper) {
+//     shoppers.forEach(function (shopper) {
 //     if (shopper.amount < 200){
 //         console.log(false + " " + shopper.name);
 //     }else if( shopper.amount > 200){
 //         var disc = shopper.amount * .12;
 //         console.log( disc + shopper.amount +" "+ shopper.name);
 //     }
+//
 //
 
 
@@ -146,7 +147,7 @@ var books = [
      *      ...
      */
 for (var i = 0; i < books.length ; i++){
-    console.log(books[i].title);
+    console.log(books[i].title + " is Book number " );
     console.log(books[i].author);
 }
 
