@@ -114,10 +114,7 @@ var books = [
         }
     }
 ];
-for (var i = 0; i < books.length ; i++){
-console.log(books[i].title);
-    console.log(books[i].author);
-}
+
 
 
 
@@ -148,6 +145,10 @@ console.log(books[i].title);
      *      ---
      *      ...
      */
+for (var i = 0; i < books.length ; i++){
+    console.log(books[i].title);
+    console.log(books[i].author);
+}
 
     /**
      * Bonus:
