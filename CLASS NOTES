@@ -1422,7 +1422,106 @@ test edit 5
 
  *********************************************/
 /*********************************************
- *  *
+ *  * DOM
+Direrectly works with the html documents
+
+can call ID's with
+
+*
+ getElementByID("id")
+*
+
+can also use
+*
+getElementsByTagName("tag"); can add ["0"] in order to indicate which tag you want to call from the HTMLCollection array
+*
+will return HTMLCollection of all matching html elements.
+
+in order to get by class
+*
+getElementsByClassName("className");
+*
+
+will also return as an HTMLCollective
+
+//- -   -   -   -   -   -   -   -   -   -
+The document is actually an object which you can access like you would access any other object and its attributes.
+// -    -   -   -   -   -   -   -   -   -
+using * .innerText = * can change the text and it actually changes the documents *
+this also allows you to add text to an empty tag.
+
+//- -   -   -   -   -   -   -   -   -   -   -
+can build up html
+*.innerHtml * after calling the element with getElementByTagName()[0];
+
+
+
+//- -   -   -   -   -   -   -   -   -   -
+can check it element has attribute after calling it from document.
+*
+.hasAttribute("nameOfAttribute");
+*
+
+can set an attribute with:
+
+*
+.setAttribute("attributeName", "value");
+*
+
+//- -   -   -   -   -   -   -   -   -   -   -
+removing attributes
+*
+.removeAttribute("name");
+*
+will remove the entire attribute can not specify.
+so if we wanted to change a single class on an element that has multiple classes it will erase them all not just one.
+
+
+//- -   -   -   -   -   -   -   -   -   -   -
+Changing styling with JS
+
+after calling item
+*.style.color*
+or
+* .style["color"] = "color"* : when using brackets you can use CSS names for the attributes.
+//- -   -   -   -   -   -   -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  *********************************************/
  /*********************************************
   *  *
