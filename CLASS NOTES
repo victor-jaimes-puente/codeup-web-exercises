@@ -1422,7 +1422,7 @@ test edit 5
 
  *********************************************/
 /*********************************************
- *  * DOM
+ *  * DOM * *
 Direrectly works with the html documents
 
 can call ID's with
