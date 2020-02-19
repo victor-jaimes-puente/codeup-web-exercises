@@ -1486,45 +1486,65 @@ or
 * .style["color"] = "color"* : when using brackets you can use CSS names for the attributes.
 //- -   -   -   -   -   -   -
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  *********************************************/
+ * * * Dom Events
+
+ First you must register the eventListener
+*
+ target.addEventListener(type, listener, [useCapture]);
+*
+// -    -   -   -   -   -   -   -   -   -
+// differente types of event :
+
+keyup (key is released)
+click (mouse is clicked)
+change (input loses focus after it has been modified)
+submit (form is submitted)
+A complete event reference can be found here:
+
+https://developer.mozilla.org/en-US/docs/Web/Reference/Events
+
+.eventPreventDefautl(); >> allows us to remove the default actions of a  key to do something different
+
+
  /*********************************************
   *  *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   *********************************************/
   /*********************************************
    *  *

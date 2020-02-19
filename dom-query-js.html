@@ -24,7 +24,12 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
+<div id="buttons" >
+    <button id="button1" class="buttons">"Button"</button> <br>
+    <button id="button2" class="buttons">"Button"</button> <br>
+    <button id="button3" class="buttons">"Button"</button> <br>
+    <button id="button4" class="buttons">"Button"</button>
+</div>
 <script>
     (function() {
         "use strict";
@@ -32,17 +37,27 @@
         var mainHeader = document.getElementById("main-header");
         console.log(mainHeader);
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        document.getElementById("button1").innerText = "Head";
+        document.getElementById("button1").addEventListener("click",function () {
         mainHeader.innerHTML = "JavaScript is Cool";
+        });
+
+
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header") ;
         console.log(subHeader);
         // TODO: Set the text color of subHeader to blue
+        document.getElementById("button3").innerText = "SkyBlue";
+        document.getElementById("button3").addEventListener("click",function () {
         subHeader.style.color = "skyblue";
+        });
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
         console.log(listItems);
         // TODO: Set text color on every other list item to grey
+        document.getElementById("button2").innerText = "List";
+        document.getElementById("button2").addEventListener("click", function () {
         for (var i = 0; i < listItems.length; i++){
         if (i % 2 !== 0){
             listItems[i].style.color = "gray";
@@ -50,6 +65,7 @@
        listItems[i].style.color = "blue"
         }
         }
+        });
         // TODO: Set text color of li with dbid = 1 to blue
         // listItems[0].getAttribute("data-dbid");
 
@@ -59,7 +75,16 @@
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        document.getElementById("button4").innerText = "Mission";
+        document.getElementById("button4").addEventListener("click",function(){
         subParagraphs[0].innerHTML ="Mission Accomplished";
+        });
+
+/*
+Add 4 buttons to the page. Attach click event listeners to each of the buttons and have the handlers perform the modifications that were automatically taking place. For example, the first button should set inner html of mainHeader to "JavaScript is Cool".
+View the results in your browser to test for the expected output.
+ */
+
 
     })();
 </script>
