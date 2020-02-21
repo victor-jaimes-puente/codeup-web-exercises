@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+
+<button id="button" >Next</button>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src="js/mapbox-geocoder-utils.js" ></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+<script src="js/keys.js" ></script>
+<!-- Custom JS -->
+<script >
+   //  var counter = 0;
+   //  function listiner() {
+   //      counter++;
+   //  }
+   //  console.log(counter);
+   // var button = document.getElementById("button");
+   //  button.addEventListener("click", listiner);
+
+   // mapbox
+   mapboxgl.accessToken = mapboxToken;
+   var map = new mapboxgl.Map({
+       container: 'map',
+       style: "mapbox://styles/mapbox/satellite-streets-v11",
+       zoom: 15,
+       center: [-97.7437, 30.2711]
+   });
+   // array
+    var locationsArray = [
+        {
+            name: "Whataburger",
+            address: "1925 East Oltorf, Austin, TX",
+            location: [-97.735580, 30.230919],
+            printedName: "<p>WhataBurger</p>"
+
+        },
+        {
+            name: "888",
+            address: "2400 E Oltorf St #1A, Austin, TX 78741",
+            location: [-97.729797, 30.229594],
+            printedName: "<p>888</p>"
+        },
+        {
+            name: "Rositas Food Truck",
+            address: "1925 East Oltorf, Austin, TX",
+            location: [ -97.728802, 30.242337],
+            printedName: "<p>Rositas FoodTruck</p>"
+        }
+        // {
+        //     name: "La Antigua Palestania",
+        //     address: "1925 East Oltorf, Austin, TX",
+        //     location: [ -97.728802, 30.242337],
+        //     printedName: "<p>Rositas FoodTruck</p>"
+        // }
+    ];
+
+
+for (var i = 0; i < locationsArray.length; i++) {
+// geocode
+    geocode(locationsArray[i].name + locationsArray[i].address, mapboxToken).then(function (results) {
+        console.log(results);
+        map.flyTo({center: results, zoom: 15});
+    });
+//PopUp
+    var popup = new mapboxgl.Popup()
+        .setLngLat(locationsArray[i].location)
+        .setHTML(locationsArray[i].printedName)
+        .addTo(map);
+// marker
+    var marker = new mapboxgl.Marker()
+        .setLngLat(locationsArray[i].location)
+        .setPopup(popup)
+        .addTo(map);
+}
+</script>
+</body>
+</html>

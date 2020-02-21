@@ -1,4 +1,5 @@
 /**********************************************
+ *
  *            SETTING UP KEYS.JS
  *********************************************/
 // TODO TOGETHER: Open .gitignore and add keys.js. Add keys.js file and import to mapbox html file. Your api keys are stored in keys.js and are added to the .gitignore so they are protected
@@ -16,7 +17,7 @@ mapboxgl.accessToken = mapboxToken;
 var map = new mapboxgl.Map({
     container: 'map',
     style: "mapbox://styles/mapbox/satellite-streets-v11",
-    zoom: 15,
+    zoom: 19.5,
     center: [-98.489544, 29.426716]
 });
 //
@@ -84,6 +85,11 @@ marker.setPopup(alamoPopUp);
 
 // TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
 
+geocode("Whataburger, austin tx  ", mapboxToken).then(function (results) {
+    console.log(results);
+    map.flyTo({center: results, zoom: 18.5});
+
+});
 
 //TODO: Using the geocode method above, add a marker at Codeup to the map
 //TODO: Instead of setCenter try using map.jumpTo()
@@ -91,6 +97,11 @@ marker.setPopup(alamoPopUp);
 
 
 // TODO TOGETHER: Reverse Geocoding: Using the reverse geocoding method, enter the coordinates {lng: -98.4861, lat: 29.4260} to get a physical address for the alamo
+reverseGeocode({lng: -102.883663, lat: 22.354682} ,mapboxToken).then(function (results) {
+    console.log(results);
+});
+
+-102.88306, 22.35361
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
 
 
