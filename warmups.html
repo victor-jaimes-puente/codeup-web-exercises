@@ -11,70 +11,95 @@
 This is my WARM UP!!!!
 
 <script>
-//     function oWorld() {
-//         return  ("o World")
-//     }
-//
-//     console.log(helloWorld());
-// // Morning warmup! Write a function that takes in two numbers and returns the quotient of the two numbers passed.
-// function devide(x, y) {
-//     console.log( x / y);
-//
-// // }
-//
-// function name(name){
-//     return "hello, " + name;
-// }
-//
-// console.log(name(victor));
+    //     function oWorld() {
+    //         return  ("o World")
+    //     }
+    //
+    //     console.log(helloWorld());
+    // // Morning warmup! Write a function that takes in two numbers and returns the quotient of the two numbers passed.
+    // function devide(x, y) {
+    //     console.log( x / y);
+    //
+    // // }
+    //
+    // function name(name){
+    //     return "hello, " + name;
+    // }
+    //
+    // console.log(name(victor));
 
-// calculateRectangularArea. 1. takes in lenght. 2. takes in width. 3. returns area.
-//     function calculateRectangularArea(a, b){
-//         return a * b;
-//
-//     }
-// console.log(calculateRectangularArea(10, 10));
+    // calculateRectangularArea. 1. takes in lenght. 2. takes in width. 3. returns area.
+    //     function calculateRectangularArea(a, b){
+    //         return a * b;
+    //
+    //     }
+    // console.log(calculateRectangularArea(10, 10));
 
 
-//Write a function called arrayLength that accepts an array and returns the length of that array.
-// arrayLength([1,2,3,4]) 	=> returns 4
-//
-// function arrayLenght(arr){
-//     return arr.length;
-// }
-//
-// console.log(arrayLenght([1, 2, 3, 4]));
-// console.log(arrayLenght([1, 2, 3, 4, 5]));
+    //Write a function called arrayLength that accepts an array and returns the length of that array.
+    // arrayLength([1,2,3,4]) 	=> returns 4
+    //
+    // function arrayLenght(arr){
+    //     return arr.length;
+    // }
+    //
+    // console.log(arrayLenght([1, 2, 3, 4]));
+    // console.log(arrayLenght([1, 2, 3, 4, 5]));
 
-// write a function that returns the number 7
-// function seven() {
-//     return 7 ;
-//
-// }
-//
-// console.log(seven());
+    // write a function that returns the number 7
+    // function seven() {
+    //     return 7 ;
+    //
+    // }
+    //
+    // console.log(seven());
 
-// Write a function called determineType that accepts a single input, and returns the type of data that input is
-// function determineType(data) {
-//     return typeof data;
-// }
-//
-// console.log(determineType("hello"));
-// console.log(determineType(8));
+    // Write a function called determineType that accepts a single input, and returns the type of data that input is
+    // function determineType(data) {
+    //     return typeof data;
+    // }
+    //
+    // console.log(determineType("hello"));
+    // console.log(determineType(8));
 
-// Write a function that returns true or false based off whether the number passed, squared, is evenly divisible by 3.
-//     function squareBY3(num) {
-//         return ( num * num ) % 3 === 0;
-//     }
-//
-// console.log(squareBY3(4));
-//Write a function called isString that accepts a single input, and returns true of the data type is a string or false if it is not a string
+    // Write a function that returns true or false based off whether the number passed, squared, is evenly divisible by 3.
+    //     function squareBY3(num) {
+    //         return ( num * num ) % 3 === 0;
+    //     }
+    //
+    // console.log(squareBY3(4));
+    //Write a function called isString that accepts a single input, and returns true of the data type is a string or false if it is not a string
+    // function isString(input) {
+    //     return typeof input === "string";
+    // }
+    //
+    // console.log(isString(50));
 
-function isString(input) {
-    return typeof input === "string";
-}
 
-console.log(isString(50));
+    /*
+
+    David Stephens:g2-decepticon:  9:06 AM
+    Untitled
+    // Write a function that returns a message that says hello to someone by accessing the name property of a passed object. If the passed
+    // argument's name property is anything but a string, or the argument is not an object, return "Hello, my dudes!"
+    console.log(helloToObject({name: "Otis"}));
+    console.log(helloToObject({name: {firstName: "Milo", lastName: "Chatran"}}));
+    console.log(helloToObject(7));
+    console.log(helloToObject([1, 2, 3]));
+    */
+
+    var arrayOfObjects = [
+        {name: "vic"}
+        {name: 200}
+
+    ];
+
+    function returnHello(input) {
+    if (typeof input !== "object" && typeof input.name === "string"){
+        console.log("hello " + input.name);
+    } else {
+        console.log("hello my dudes");
+    }}
 </script>
 
 </body>
