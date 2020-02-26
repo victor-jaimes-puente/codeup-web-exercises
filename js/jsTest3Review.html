@@ -29,7 +29,7 @@
     //
     //
     //     ## Practice Problems
-    // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
+    // 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.1
     //
     //     ```js
     //         filterNumbers(["fred", true, 5, 3]) //[3, 5]
@@ -266,6 +266,21 @@ var input1 =  [
     // ]
     //
     //     ```
+
+
+    // TODO Write a function named keepYellow that accepts an array of strings and returns an array with all the strings that are equal to "yellow"
+
+    function keepYellow(array) {
+        var bucket = [];
+        array.forEach(function (color) {
+            if (color === "yellow"){
+                bucket.push(color);
+            }
+        });
+        return bucket;
+    }
+
+    console.log(keepYellow(["yellow", "red", "blue", "yellow", "black", "brown", "yellow"]));
 
 </script>
 
