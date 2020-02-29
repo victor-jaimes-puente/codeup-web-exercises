@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/jquery-2.2.4%20(1).js"></script>
+<script>
+    "use strict";
+
+
+    $(document).ready(function () {
+
+            var konamiCode =
+                [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+            var userInput = [];
+
+            var keyFunction =
+                $(document).keyup(function (event) {
+                    userInput.push(event.keyCode);
+                    console.log(userInput);
+                    console.log((userInput));
+                });
+
+                    var enterKey = [];
+                    if (keyFunction === 13){
+                        enterKey.push(keyFunction);
+                        enterKey =[];
+                        console.log(enterKey + "enter");
+                    }
+
+
+
+        }
+    );
+
+</script>
+</body>
+</html>

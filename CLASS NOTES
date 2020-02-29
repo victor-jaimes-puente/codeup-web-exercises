@@ -1510,8 +1510,20 @@ https://developer.mozilla.org/en-US/docs/Web/Reference/Events
  /*********************************************
   *  *
 
+Jquery
+
+.html: returns the HTML contents of selected element or the first element in a collection. Similar to the innerHTML property we previously covered.
+.css: allows us to change CSS properties for a given element or elements. Similar to the style property previously discussed.
+
+Using the Multiple Selector
+We can use the multiple selector by separating our selectors by commas:
 
 
+$("selector1, selector2, ...")
+If we wanted to get all the elements with a class of important and all paragraph elements, we could use this selector:
+
+
+$('.important, p')
 
 
 
