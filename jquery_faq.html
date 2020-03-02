@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Parks</title>
+    <script src="js/jquery-2.2.4%20(1).js"></script>
+<style>
+    .invisible{
+        visibility: hidden;
+    }
+    .highlight{
+        background-color: skyblue;
+    }
+</style>
+</head>
+<body>
+<ul style="list-style: none">
+    <li> Fact # 1</li>
+    <li> Fact # 2</li>
+    <li> Fact # 3</li>
+    <li> Fact # 4</li>
+    <li> Fact # 5</li>
+    <li> Fact # 6</li>
+    <li> Fact # 7</li>
+    <li> Fact # 8</li>
+    <li> Fact # 9</li>
+    <li> Fact # 10</li>
+</ul>
+<button id="flipButton"> Flip </button>
+<script>
+    "use strict";
+
+
+    $('#flipButton').click(function () {
+        $('li').toggleClass('invisible')
+
+    });
+    $('li').click(function () {
+        $(this).toggleClass('highlight');
+    })
+
+</script>
+</body>
+</html>
