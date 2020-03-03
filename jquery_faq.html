@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <title>National Parks</title>
     <script src="js/jquery-2.2.4%20(1).js"></script>
-<style>
-    .invisible{
-        visibility: hidden;
-    }
-    .highlight{
-        background-color: skyblue;
-    }
-</style>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+
+        .highlight {
+            background-color: skyblue;
+        }
+        .boldListItem{
+            font-weight: bold;
+        }
+        .listHighLight{
+            background-color: skyblue;
+        }
+        .firstBlue{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
+
+<div id="header" >
+    <h1 id="signUp" >Would you like to sign up for our newsletter?</h1>
+    <span id="xHider" >x</span>
+</div>
+
+
 <ul style="list-style: none">
     <li> Fact # 1</li>
     <li> Fact # 2</li>
@@ -27,16 +44,74 @@
     <li> Fact # 10</li>
 </ul>
 <button id="flipButton"> Flip </button>
+Second Exercise
+<h3>Park Name</h3>
+<ul>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+<h3>Park Name</h3>
+<ul>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+<h3>Park Name</h3>
+<ul>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+<button id="listHighlighter"> Last Items HighLight</button>
+<div>
+
+    <img src="../" alt="">
+    
+</div>
+
+
 <script>
     "use strict";
+    // second exercise
 
+    $('#listHighlighter').click(function () {
+        $('ul').each(function () {
+            $(this).children().last().toggleClass('listHighLight')
+        })
+    });
+    $('h3').click(function () {
 
-    $('#flipButton').click(function () {
-        $('li').toggleClass('invisible')
+        $('ul').children().toggleClass('boldListItem');
 
     });
     $('li').click(function () {
-        $(this).toggleClass('highlight');
+        $('ul').each(function () {
+            $(this).children().first().toggleClass('firstBlue')
+        })
+
+
+    });
+
+
+
+        $('#flipButton').click(function () {
+            $('li').toggleClass('invisible')
+
+        });
+        $('li').click(function () {
+            $(this).toggleClass('highlight');
+        });
+
+        // effects
+        // li facts under h3s need to be hidden and slide down
+        // after user has been on page for 8 seconds alert to register
+        //
+    $('#xHider').click(function () {
+        $('#header').toggle();
     })
 
 </script>

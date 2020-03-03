@@ -17,40 +17,30 @@ return $('#colorText').html();
 
 console.log(getColorText());
 // Setter for text of logo color
+
 function setColorText(color) {
-return $('#colorText').removeClass(getColorText()).html(color).addClass(color);
+return $('#colorText').html(color);
 }
 
-console.log(setColorText('purple'));
+console.log(setColorText('green'));
+console.log(getColorText());
+
+console.log(getColorText());
 // Getter for section color
 function getSectionColor(section) {
-return $(section).attr('class');
+    return $(section).attr('class');
 }
 
-console.log(getColorText('path1'));
+console.log(getSectionColor('#path1'));
+
 // Setter for the section color
     // change all sections if 'all' is passed in
     // if individual section is passed in, change its color (used for Rainbow effect)
 
-function setSectionColor(color, section) {
-    if (section === "all") {
-        resetColor();
-        return $('.codeup-logo > path').add(color);
-    } else {
-        $(section).removeClass(getSectionColor(section));
-        return $(section).addClass(color);
 
-    }
-}
-setSectionColor('green', 'all');
 // reset all path elements to default, and change the 'color' text in the h2 to 'green'
 
 
-    function resetColor() {
-        $('.codeup-logo > path').removeClass(function () {
-            return $(this.attr('class'));
-        });
-    }
 
 
 
