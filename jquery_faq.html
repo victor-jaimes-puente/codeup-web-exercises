@@ -12,22 +12,25 @@
         .highlight {
             background-color: skyblue;
         }
-        .boldListItem{
+
+        .boldListItem {
             font-weight: bold;
         }
-        .listHighLight{
+
+        .listHighLight {
             background-color: skyblue;
         }
-        .firstBlue{
+
+        .firstBlue {
             color: blue;
         }
     </style>
 </head>
 <body>
 
-<div id="header" >
-    <h1 id="signUp" >Would you like to sign up for our newsletter?</h1>
-    <span id="xHider" >x</span>
+<div id="header">
+    <h1 id="signUp">Would you like to sign up for our newsletter?</h1>
+    <span id="xHider">x</span>
 </div>
 
 
@@ -43,34 +46,41 @@
     <li> Fact # 9</li>
     <li> Fact # 10</li>
 </ul>
-<button id="flipButton"> Flip </button>
+<button id="flipButton"> Flip</button>
 Second Exercise
-<h3>Park Name</h3>
-<ul>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-</ul>
-<h3>Park Name</h3>
-<ul>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-</ul>
-<h3>Park Name</h3>
-<ul>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-    <li>Fact</li>
-</ul>
-<button id="listHighlighter"> Last Items HighLight</button>
+
+<h3 id="header1" >Park Name</h3>
+
+    <ul id="fact1" >
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+
+<h3 id="header2" >Park Name</h3>
+<div id="fact2" >
+    <ul>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+</div>
+<h3 id="header3" >Park Name</h3>
+<div id="fact3" >
+    <ul>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+        <li>Fact</li>
+    </ul>
+</div>
+    <button id="listHighlighter"> Last Items HighLight</button>
 <div>
 
     <img src="../" alt="">
-    
+
 </div>
 
 
@@ -97,23 +107,43 @@ Second Exercise
     });
 
 
+    $('#flipButton').click(function () {
+        $('li').toggleClass('invisible')
 
-        $('#flipButton').click(function () {
-            $('li').toggleClass('invisible')
+    });
+    $('li').click(function () {
+        $(this).toggleClass('highlight');
+    });
 
-        });
-        $('li').click(function () {
-            $(this).toggleClass('highlight');
-        });
+    // effects
+    // li facts under h3s need to be hidden and slide down
+    // after user has been on page for 8 seconds alert to register
 
-        // effects
-        // li facts under h3s need to be hidden and slide down
-        // after user has been on page for 8 seconds alert to register
-        //
     $('#xHider').click(function () {
         $('#header').toggle();
-    })
+    });
 
+
+    $('#header1').click(function () {
+        $('#fact1').children().slideToggle();
+    });
+    $('#header2').click(function () {
+        $('#fact2').children().slideToggle();
+    });
+    $('#header3').click(function () {
+        $('#fact3').children().slideToggle();
+    });
+    // delay
+
+    $(document).ready(function () {
+    return timeoutId;
+    });
+    var delay = 8000; // delay time in milliseconds
+
+    var timeoutId = setTimeout(function () {
+        confirm('Would you like to register');
+    }, delay);
 </script>
+
 </body>
 </html>
