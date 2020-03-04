@@ -1,0 +1,23 @@
+/*header*/
+*{
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    border: solid black 1px;
+    grid-template-areas:
+            "address adress"
+            "quickBio"
+    ;
+}
+#nameAddress{
+    display: grid;
+    grid-area:address;
+    border:solid black 1px;
+
+}
+#quickBio{
+    display: grid;
+    grid-area: quickBio;
+    border:solid black 1px;
+}
