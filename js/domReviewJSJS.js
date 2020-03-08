@@ -80,6 +80,7 @@ $('#highlight').click(function () {
 // Create a delay listiner for the document
 // after 3000 milisec change background color to pink
 
+
 $('*').delay(3000).queue(function () {
     $(this).css('background-color', 'pink');
 });
