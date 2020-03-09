@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="js/keys.js"></script>
+
+<!--    JQ-->
     <script src="js/jquery-2.2.4.js"></script>
+<!--    BOOTSRAP-->
     <meta charset="UTF-8">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Weather Map</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--   MAP.BOX.CSS-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
+<!--   LOCAL.STYLE-->
     <link rel="stylesheet" href="css/weather-map.css">
-
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <title>Weather Map</title>
 
 </head>
 <body>
@@ -22,49 +26,54 @@
 <main class="main">
     <!--    CARD1.CONTAINER-->
     <!--    will change class of container so that it will display flex-->
+
     <div id="card.container" class=" bg-dark d-flex p-2 bd-highlight justify-content-around">
         <div class="card bg-dark" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5  id="cardTitle1" class="card-title">Card title</h5>
-                <p id="cardText1" class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!--            ICON-->
+            <i id="icon1"></i>
+            <div class="card-body ">
+                <h5 id="cardTitle1" class="card-title"></h5>
+                <p id="cardText1" class="card-text"></p>
             </div>
         </div>
         <div class="card bg-dark  " style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <!--            ICON-->
+            <i id="icon2"></i>
             <div class="card-body ">
-                <h5  id="cardTitle2" class="card-title">Card title</h5>
-                <p id="cardText2" class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 id="cardTitle2" class="card-title"></h5>
+                <p id="cardText2" class="card-text"></p>
             </div>
         </div>
         <div class="card bg-dark " style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <!--            ICON-->
+            <i id="icon3"></i>
             <div class="card-body">
-                <h5  id="cardTitle3" class="card-title">Card title</h5>                <p id="cardText3" class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 id="cardTitle3" class="card-title"></h5>
+                <p id="cardText3" class="card-text"></p>
             </div>
         </div>
     </div>
+<!--MAP-->
+    <div id='map'></div>
 </main>
 <!--FOOTER-->
 <footer class="footer">
 
 </footer>
 <!--secondaryScriptBegins-->
-<script src="js/weather-map.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
+<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
+<!--        crossorigin="anonymous"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<!--MAP.JS-->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/weather-map.js"></script>
 </body>
 </html>
