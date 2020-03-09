@@ -58,6 +58,7 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
     console.log(tomorrowAll);
     console.log(day3All);
     // console.log(data.daily.data[0]);
+
 });
 
 
