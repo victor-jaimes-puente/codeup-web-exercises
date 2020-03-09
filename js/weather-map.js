@@ -53,8 +53,6 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
 
 // set var for icon
 
-
-
 // var set array of all
     var todayAll = [todayDate, todayPressure, todayWind, todayIcon, summaryToday];
     var tomorrowAll = [day2Date, tomorrowPressure, tomorrowWind, tomorrowIcon, summaryday3];
