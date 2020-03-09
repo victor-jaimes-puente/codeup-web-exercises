@@ -50,6 +50,11 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
     console.log(tomorrowPressure);
     console.log(day3Pressure);
     console.log(data.daily.data[0]);
+
+// set var for icon
+
+
+
 // var set array of all
     var todayAll = [todayDate, todayPressure, todayWind, todayIcon, summaryToday];
     var tomorrowAll = [day2Date, tomorrowPressure, tomorrowWind, tomorrowIcon, summaryday3];
@@ -58,6 +63,19 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
     console.log(tomorrowAll);
     console.log(day3All);
     // console.log(data.daily.data[0]);
+
+// CARD1
+    $('#cardTitle1').text('' + todayAll[0]);
+    $('#cardText1').html('' + 'Pressure: ' + todayAll[1] + '<br>' + ' Wind: ' + todayAll[2] + '<br>' + todayAll[3] + '<br>' + todayAll[4]);
+
+// CARD2
+    $('#cardTitle2').text('' + tomorrowAll[0]);
+    $('#cardText2').html('' + 'Pressure: '+ tomorrowAll[1] + '<br>' + ' Wind: ' + tomorrowAll[2] + '<br>' + tomorrowAll[3] + '<br>' + tomorrowAll[4]);
+
+// CARD3
+    $('#cardTitle3').text('' + day3All[0]);
+    $('#cardText3').html('' + 'Pressure: '+ day3All[1] + '<br>' + ' Wind: ' + day3All[2] + '<br>' + day3All[3] + '<br>' + day3All[4]);
+
 
 });
 
