@@ -1,6 +1,21 @@
 'use strict';
 
 
+$('#inputButton').click(function () {
+    var userInput = $('#userInput').val();
+    console.log(userInput);
+    geocode(userInput, mapboxToken).then(function (result) {
+
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(10);
+
+        var reversed = result.reverse();
+        console.log(reversed);
+    });
+
+});
+
 $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' + darkSkyKey + '/37.8267,-122.4233').done(function (data) {
 // dateCorrectionFunction
     function dateCorrection(time) {
@@ -60,6 +75,7 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
     // console.log(todayWind);
     // console.log(tomorrowWind);
     // console.log(day3Wind);
+
 // var set for tempHigh
     var todayTempHigh = weatherToday.temperatureHigh;
     var tomorrowTempHigh = weatherTom.temperatureHigh;
@@ -77,7 +93,7 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
 
 // var set array of all
     var todayAll = [dateTodayStringed, todayTempHigh, todayTempLow, todayWind, todayIcon, summaryToday];
-    var tomorrowAll = [day2DateStringed, tomorrowTempHigh, tomorrowTempLow, tomorrowWind, tomorrowIcon, summaryday3];
+    var tomorrowAll = [day2DateStringed, tomorrowTempHigh, tomorrowTempLow, tomorrowWind, tomorrowIcon, summaryDay2];
     var day3All = [day3DateStringed, day3TempHigh, day3TempLow, day3Wind, day3Icon, summaryday3];
     // console.log(todayAll);
     // console.log(tomorrowAll);
@@ -155,18 +171,18 @@ $.ajax('https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' +
 
 // CARD1
     $('#cardTitle1').text('' + todayAll[0]);
-    $('#cardText1').html('High' + ': ' + todayAll[1] + '<br>' + 'Low' + ': ' + todayAll[2] + '<br>' + ' Wind: ' + todayAll[3] + '<br>' + '<br>' + todayAll[4]);
+    $('#cardText1').html('High' + ': ' + todayAll[1] + '<br>' + 'Low' + ': ' + todayAll[2] + '<br>' + ' Wind: ' + todayAll[3] + '<br>' + '<br>' + todayAll[5]);
     $('#icon1').addClass(assignIcon(todayAll[4]));
 // CARD2
     $('#cardTitle2').text('' + tomorrowAll[0]);
-    $('#cardText2').html('High' + ': ' + tomorrowAll[1] + '<br>' + 'Low' + ': ' + tomorrowAll[2] + '<br>' + ' Wind: ' + tomorrowAll[3] + '<br>' + '<br>' + tomorrowAll[4]);
+    $('#cardText2').html('High' + ': ' + tomorrowAll[1] + '<br>' + 'Low' + ': ' + tomorrowAll[2] + '<br>' + ' Wind: ' + tomorrowAll[3] + '<br>' + '<br>' + tomorrowAll[5]);
     $('#icon2').addClass(assignIcon(tomorrowAll[4]));
 // CARD3
     $('#cardTitle3').text('' + day3All[0]);
-    $('#cardText3').html('High' + ': ' + day3All[1] + '<br>' + 'Low' + ': ' + day3All[2] + '<br>' + ' Wind: ' + day3All[3] + '<br>' + '<br>' + day3All[4]);
+    $('#cardText3').html('High' + ': ' + day3All[1] + '<br>' + 'Low' + ': ' + day3All[2] + '<br>' + ' Wind: ' + day3All[3] + '<br>' + '<br>' + day3All[5]);
     $('#icon3').addClass(assignIcon(day3All[4]));
 
-    console.log(data);
+    // console.log(data);
 
 });
 
@@ -178,7 +194,10 @@ console.log(mapboxToken);
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: "mapbox://styles/mapbox/satellite-streets-v11",
-    zoom: 15,
+    style: "mapbox://styles/mapbox/navigation-guidance-night-v4",
+    zoom: 10,
     center: [-97.7437, 30.2711]
+
 });
+
+

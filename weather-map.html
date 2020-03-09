@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 
-<!--    JQ-->
+    <!--    JQ-->
     <script src="js/jquery-2.2.4.js"></script>
-<!--    BOOTSRAP-->
+    <!--    BOOTSRAP-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--   MAP.BOX.CSS-->
+    <!--   MAP.BOX.CSS-->
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
-<!--   LOCAL.STYLE-->
-    <link rel="stylesheet" href="css/weather-map.css">
+    <!--   LOCAL.STYLE-->
     <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather-map.css">
     <title>Weather Map</title>
 
 </head>
@@ -27,16 +27,18 @@
     <!--    CARD1.CONTAINER-->
     <!--    will change class of container so that it will display flex-->
 
-    <div id="card.container" class=" bg-dark d-flex p-2 bd-highlight justify-content-around">
-        <div class="card bg-dark" style="width: 18rem;">
+    <div id="card.container" class="  d-flex p-2 bd-highlight ">
+        <!--MAP-->
+        <div id='map'></div>
+        <div id="card1" class="card bg-dark" style="width: 15rem;">
             <!--            ICON-->
             <i id="icon1"></i>
-            <div class="card-body ">
+            <div class="card-body">
                 <h5 id="cardTitle1" class="card-title"></h5>
                 <p id="cardText1" class="card-text"></p>
             </div>
         </div>
-        <div class="card bg-dark  " style="width: 18rem;">
+        <div  id="card2" class="card bg-dark  " style="width: 15rem;">
             <!--            ICON-->
             <i id="icon2"></i>
             <div class="card-body ">
@@ -44,7 +46,7 @@
                 <p id="cardText2" class="card-text"></p>
             </div>
         </div>
-        <div class="card bg-dark " style="width: 18rem;">
+        <div id="card3"  class="card bg-dark " style="width: 15rem;">
             <!--            ICON-->
             <i id="icon3"></i>
             <div class="card-body">
@@ -53,12 +55,14 @@
             </div>
         </div>
     </div>
-<!--MAP-->
-    <div id='map'></div>
 </main>
 <!--FOOTER-->
 <footer class="footer">
-
+    <form action="">
+        <label for="userInput"></label>
+        <input id="userInput" type="text">
+        <button id="inputButton"  type="button" class="btn btn-dark">Search</button>
+    </form>
 </footer>
 <!--secondaryScriptBegins-->
 <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
@@ -74,6 +78,8 @@
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script src="js/weather-map.js"></script>
+
 </body>
 </html>
