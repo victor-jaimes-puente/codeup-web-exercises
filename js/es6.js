@@ -33,31 +33,38 @@ const users = [
 // to the languages array
 // TODO: replace the `var` keyword with `const`, then try to reassign a variable
 // declared as `const`
-var name = 'your_name_here';
-var email = '';
-var languages = [];
+const name = 'Victor';
+const email = 'test@email.com';
+const languages = ['css', 'html', 'js', 'jq', 'Nodejs', 'react'];
 
 // TODO: rewrite the object literal using object property shorthand
-users.push({
-  name: name,
-  email: email,
-  languages: languages
-});
 
+
+ users.push = {
+  name,
+  email,
+  languages
+};
+// console.log(users);
 // TODO: replace `var` with `let` in the following variable declarations
-var emails = [];
-var names = [];
+let emails = [];
+let names = [];
 
 // TODO: rewrite the following using arrow functions
-users.forEach(function(user) {
-  return emails.push(user.email);
-});
-users.forEach(function(user) {
-  return names.push(user.name);
-});
+// users.forEach(function(user) {
+//   return emails.push(user.email);
+// });
+for (let person of users){
+  emails.push(person.email);
+}
 
+// console.log(emails);
+for (let person of users){
+  names.push(person.name);
+}
+// console.log(names);
 // TODO: replace `var` with `let` in the following declaration
-var developers = [];
+let developers = [];
 users.forEach(function(user) {
   // TODO: rewrite the code below to use object destructuring assignment
   //       note that you can also use destructuring assignment in the function
@@ -65,11 +72,13 @@ users.forEach(function(user) {
   const name = user.name;
   const email = user.email;
   const languages = user.languages;
+  const dev = { name, email, languages};
+  developers.push(dev);
 
   // TODO: rewrite the assignment below to use template strings
-  developers.push(name + '\'s email is ' + email + name + ' knows ' + languages.join(', '));
+  developers.push(`${name}'s ${email} is ${email} ${name} knows ${languages.join(', ')}`);
+console.log(developers);
 });
-
 // TODO: Use `let` for the following variable
 var list = '<ul>';
 
